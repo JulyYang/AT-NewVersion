@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837180C1CC3882D003F3D6C /* AppDelegate.swift */; };
-		1837180F1CC3882D003F3D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837180E1CC3882D003F3D6C /* ViewController.swift */; };
-		183718121CC3882D003F3D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183718101CC3882D003F3D6C /* Main.storyboard */; };
 		183718141CC3882D003F3D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183718131CC3882D003F3D6C /* Assets.xcassets */; };
-		183718171CC3882D003F3D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183718151CC3882D003F3D6C /* LaunchScreen.storyboard */; };
+		183718251CC394E1003F3D6C /* TListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183718241CC394E1003F3D6C /* TListCell.xib */; };
+		183718271CC3950D003F3D6C /* TList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183718261CC3950D003F3D6C /* TList.storyboard */; };
+		183718291CC3951D003F3D6C /* TListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183718281CC3951D003F3D6C /* TListTableViewController.swift */; };
+		1837182C1CC3953A003F3D6C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837182A1CC3953A003F3D6C /* Login.storyboard */; };
+		1837182E1CC39546003F3D6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837182D1CC39546003F3D6C /* LoginViewController.swift */; };
+		183718311CC39601003F3D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */; };
+		717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		183718091CC3882D003F3D6C /* AmazingTutor_New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingTutor_New.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1837180C1CC3882D003F3D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1837180E1CC3882D003F3D6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		183718111CC3882D003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183718131CC3882D003F3D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		183718161CC3882D003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183718181CC3882D003F3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183718241CC394E1003F3D6C /* TListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TListCell.xib; path = ../../AmazingTutor/AmazingTutor/TListCell.xib; sourceTree = "<group>"; };
+		183718261CC3950D003F3D6C /* TList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TList.storyboard; path = ../../AmazingTutor/AmazingTutor/TList.storyboard; sourceTree = "<group>"; };
+		183718281CC3951D003F3D6C /* TListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TListTableViewController.swift; path = ../../AmazingTutor/AmazingTutor/TListTableViewController.swift; sourceTree = "<group>"; };
+		1837182B1CC3953A003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AmazingTutor/AmazingTutor/Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		1837182D1CC39546003F3D6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../AmazingTutor/AmazingTutor/LoginViewController.swift; sourceTree = "<group>"; };
+		183718301CC39601003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AmazingTutor/AmazingTutor/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingTutor_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CA634E12E4070F329CF0C3 /* Pods-AmazingTutor_New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingTutor_New.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New.debug.xcconfig"; sourceTree = "<group>"; };
+		E2E13E65F58D25A1CA326729 /* Pods-AmazingTutor_New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingTutor_New.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				1837180B1CC3882D003F3D6C /* AmazingTutor_New */,
 				1837180A1CC3882D003F3D6C /* Products */,
+				A5978A4758A4032D8547847A /* Pods */,
+				30A6D91EB7DD66A7CBAAE881 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,66 @@
 		1837180B1CC3882D003F3D6C /* AmazingTutor_New */ = {
 			isa = PBXGroup;
 			children = (
+				183718231CC3944D003F3D6C /* Login */,
+				183718221CC39442003F3D6C /* Teacher List */,
+				183718211CC39431003F3D6C /* Teacher Personal Info */,
+				183718201CC39419003F3D6C /* AT Documents */,
 				1837180C1CC3882D003F3D6C /* AppDelegate.swift */,
-				1837180E1CC3882D003F3D6C /* ViewController.swift */,
-				183718101CC3882D003F3D6C /* Main.storyboard */,
+				1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */,
 				183718131CC3882D003F3D6C /* Assets.xcassets */,
-				183718151CC3882D003F3D6C /* LaunchScreen.storyboard */,
-				183718181CC3882D003F3D6C /* Info.plist */,
 			);
 			path = AmazingTutor_New;
+			sourceTree = "<group>";
+		};
+		183718201CC39419003F3D6C /* AT Documents */ = {
+			isa = PBXGroup;
+			children = (
+				183718181CC3882D003F3D6C /* Info.plist */,
+			);
+			name = "AT Documents";
+			sourceTree = "<group>";
+		};
+		183718211CC39431003F3D6C /* Teacher Personal Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Teacher Personal Info";
+			sourceTree = "<group>";
+		};
+		183718221CC39442003F3D6C /* Teacher List */ = {
+			isa = PBXGroup;
+			children = (
+				183718241CC394E1003F3D6C /* TListCell.xib */,
+				183718261CC3950D003F3D6C /* TList.storyboard */,
+				183718281CC3951D003F3D6C /* TListTableViewController.swift */,
+			);
+			name = "Teacher List";
+			sourceTree = "<group>";
+		};
+		183718231CC3944D003F3D6C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1837182A1CC3953A003F3D6C /* Login.storyboard */,
+				1837182D1CC39546003F3D6C /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		30A6D91EB7DD66A7CBAAE881 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5978A4758A4032D8547847A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5CA634E12E4070F329CF0C3 /* Pods-AmazingTutor_New.debug.xcconfig */,
+				E2E13E65F58D25A1CA326729 /* Pods-AmazingTutor_New.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1837181B1CC3882D003F3D6C /* Build configuration list for PBXNativeTarget "AmazingTutor_New" */;
 			buildPhases = (
+				5CF8A55337F51961E60D2222 /* Check Pods Manifest.lock */,
 				183718051CC3882D003F3D6C /* Sources */,
 				183718061CC3882D003F3D6C /* Frameworks */,
 				183718071CC3882D003F3D6C /* Resources */,
+				5F8A2D297AC75107EED788B3 /* Embed Pods Frameworks */,
+				C4C83D93D6EA93D97D57700E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,20 +190,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183718171CC3882D003F3D6C /* LaunchScreen.storyboard in Resources */,
+				183718271CC3950D003F3D6C /* TList.storyboard in Resources */,
+				1837182C1CC3953A003F3D6C /* Login.storyboard in Resources */,
 				183718141CC3882D003F3D6C /* Assets.xcassets in Resources */,
-				183718121CC3882D003F3D6C /* Main.storyboard in Resources */,
+				183718311CC39601003F3D6C /* LaunchScreen.storyboard in Resources */,
+				183718251CC394E1003F3D6C /* TListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CF8A55337F51961E60D2222 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8A2D297AC75107EED788B3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C83D93D6EA93D97D57700E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		183718051CC3882D003F3D6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1837180F1CC3882D003F3D6C /* ViewController.swift in Sources */,
+				1837182E1CC39546003F3D6C /* LoginViewController.swift in Sources */,
+				183718291CC3951D003F3D6C /* TListTableViewController.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,18 +262,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183718101CC3882D003F3D6C /* Main.storyboard */ = {
+		1837182A1CC3953A003F3D6C /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				183718111CC3882D003F3D6C /* Base */,
+				1837182B1CC3953A003F3D6C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
-		183718151CC3882D003F3D6C /* LaunchScreen.storyboard */ = {
+		1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				183718161CC3882D003F3D6C /* Base */,
+				183718301CC39601003F3D6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -199,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -238,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -247,6 +366,7 @@
 		};
 		1837181C1CC3882D003F3D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CA634E12E4070F329CF0C3 /* Pods-AmazingTutor_New.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
@@ -258,6 +378,7 @@
 		};
 		1837181D1CC3882D003F3D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E13E65F58D25A1CA326729 /* Pods-AmazingTutor_New.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
@@ -286,6 +407,7 @@
 				1837181D1CC3882D003F3D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
