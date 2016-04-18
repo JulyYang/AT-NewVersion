@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenPic" translatesAutoresizingMaskIntoConstraints="NO" id="e3y-Pc-d35">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmazingTutor_text" translatesAutoresizingMaskIntoConstraints="NO" id="o5y-qs-iZu">
+                                <rect key="frame" x="200" y="100" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5fM-nc-MIK"/>
+                                    <constraint firstAttribute="width" constant="200" id="BC1-Rc-V2e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e3y-Pc-d35" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="01U-uG-4Kq"/>
+                            <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="51g-zv-DuU"/>
+                            <constraint firstItem="e3y-Pc-d35" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BZb-Pa-CO8"/>
+                            <constraint firstItem="o5y-qs-iZu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ERA-AB-SmN"/>
+                            <constraint firstAttribute="trailing" secondItem="e3y-Pc-d35" secondAttribute="trailing" id="FLO-zS-GEX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e3y-Pc-d35" secondAttribute="trailing" constant="-20" id="P5c-IA-5kc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="RFX-a2-gdp"/>
+                            <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="b0g-y9-AfW"/>
+                            <constraint firstItem="o5y-qs-iZu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="80" id="lIX-ki-dMK"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="wGI-sk-d9X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="01U-uG-4Kq"/>
+                                <exclude reference="51g-zv-DuU"/>
+                                <exclude reference="P5c-IA-5kc"/>
+                                <exclude reference="RFX-a2-gdp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AmazingTutor_text" width="184" height="29"/>
+        <image name="LaunchScreenPic" width="375" height="667"/>
+    </resources>
+</document>

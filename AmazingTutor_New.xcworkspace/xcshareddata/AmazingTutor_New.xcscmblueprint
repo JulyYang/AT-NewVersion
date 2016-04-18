@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D03B14351BE74BD336F31F2DF2FBE4640048467",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "304836BC16E1C2E2C1EF3537542A270C2E455177" : 0,
+    "6D03B14351BE74BD336F31F2DF2FBE4640048467" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BBB9F097-C608-4D5C-87BA-17B780DABA32",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "304836BC16E1C2E2C1EF3537542A270C2E455177" : "AmazingTutor\/",
+    "6D03B14351BE74BD336F31F2DF2FBE4640048467" : "AmazingTutor_New\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AmazingTutor_New",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AmazingTutor_New.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JulyYang\/Amazing-Tutor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "304836BC16E1C2E2C1EF3537542A270C2E455177"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JulyYang\/AmazingTutor-NewVersion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D03B14351BE74BD336F31F2DF2FBE4640048467"
+    }
+  ]
+}

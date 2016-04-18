@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '71810B4D0DE988CA02DF6BE8'
+               BlueprintIdentifier = 'EC815B3CBE789B12B131B282'
                BlueprintName = 'Pods-AmazingTutor_New'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_AmazingTutor_New.framework'>

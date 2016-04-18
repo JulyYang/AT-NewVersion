@@ -10,11 +10,14 @@
 		1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837180C1CC3882D003F3D6C /* AppDelegate.swift */; };
 		183718141CC3882D003F3D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183718131CC3882D003F3D6C /* Assets.xcassets */; };
 		183718251CC394E1003F3D6C /* TListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183718241CC394E1003F3D6C /* TListCell.xib */; };
-		183718271CC3950D003F3D6C /* TList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183718261CC3950D003F3D6C /* TList.storyboard */; };
-		183718291CC3951D003F3D6C /* TListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183718281CC3951D003F3D6C /* TListTableViewController.swift */; };
-		1837182C1CC3953A003F3D6C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837182A1CC3953A003F3D6C /* Login.storyboard */; };
-		1837182E1CC39546003F3D6C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837182D1CC39546003F3D6C /* LoginViewController.swift */; };
-		183718311CC39601003F3D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */; };
+		183718381CC3BE6F003F3D6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183718371CC3BE6F003F3D6C /* GoogleService-Info.plist */; };
+		1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */; };
+		1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872624C1CC4EF08003340D7 /* Login.storyboard */; };
+		1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872624E1CC4EF71003340D7 /* LoginViewController.swift */; };
+		187262511CC4F031003340D7 /* TList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187262501CC4F031003340D7 /* TList.storyboard */; };
+		187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187262521CC4F076003340D7 /* TListTableViewController.swift */; };
+		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
+		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +27,15 @@
 		183718131CC3882D003F3D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183718181CC3882D003F3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183718241CC394E1003F3D6C /* TListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TListCell.xib; path = ../../AmazingTutor/AmazingTutor/TListCell.xib; sourceTree = "<group>"; };
-		183718261CC3950D003F3D6C /* TList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TList.storyboard; path = ../../AmazingTutor/AmazingTutor/TList.storyboard; sourceTree = "<group>"; };
-		183718281CC3951D003F3D6C /* TListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TListTableViewController.swift; path = ../../AmazingTutor/AmazingTutor/TListTableViewController.swift; sourceTree = "<group>"; };
-		1837182B1CC3953A003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AmazingTutor/AmazingTutor/Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		1837182D1CC39546003F3D6C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../AmazingTutor/AmazingTutor/LoginViewController.swift; sourceTree = "<group>"; };
-		183718301CC39601003F3D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AmazingTutor/AmazingTutor/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183718341CC3A39A003F3D6C /* AmazingTutor_New-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazingTutor_New-Bridging-Header.h"; sourceTree = "<group>"; };
+		183718371CC3BE6F003F3D6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../AmazingTutor Materials/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1872624C1CC4EF08003340D7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1872624E1CC4EF71003340D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		187262501CC4F031003340D7 /* TList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TList.storyboard; sourceTree = "<group>"; };
+		187262521CC4F076003340D7 /* TListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListTableViewController.swift; sourceTree = "<group>"; };
+		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
+		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingTutor_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CA634E12E4070F329CF0C3 /* Pods-AmazingTutor_New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingTutor_New.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New.debug.xcconfig"; sourceTree = "<group>"; };
 		E2E13E65F58D25A1CA326729 /* Pods-AmazingTutor_New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingTutor_New.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmazingTutor_New/Pods-AmazingTutor_New.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +79,7 @@
 				183718211CC39431003F3D6C /* Teacher Personal Info */,
 				183718201CC39419003F3D6C /* AT Documents */,
 				1837180C1CC3882D003F3D6C /* AppDelegate.swift */,
-				1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */,
+				1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */,
 				183718131CC3882D003F3D6C /* Assets.xcassets */,
 			);
 			path = AmazingTutor_New;
@@ -82,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				183718181CC3882D003F3D6C /* Info.plist */,
+				183718371CC3BE6F003F3D6C /* GoogleService-Info.plist */,
+				183718341CC3A39A003F3D6C /* AmazingTutor_New-Bridging-Header.h */,
 			);
 			name = "AT Documents";
 			sourceTree = "<group>";
@@ -97,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				183718241CC394E1003F3D6C /* TListCell.xib */,
-				183718261CC3950D003F3D6C /* TList.storyboard */,
-				183718281CC3951D003F3D6C /* TListTableViewController.swift */,
+				187262501CC4F031003340D7 /* TList.storyboard */,
+				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
+				18E9DDF41CC473B3000896EC /* TListCell.swift */,
+				187262521CC4F076003340D7 /* TListTableViewController.swift */,
 			);
 			name = "Teacher List";
 			sourceTree = "<group>";
@@ -106,8 +117,8 @@
 		183718231CC3944D003F3D6C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				1837182A1CC3953A003F3D6C /* Login.storyboard */,
-				1837182D1CC39546003F3D6C /* LoginViewController.swift */,
+				1872624C1CC4EF08003340D7 /* Login.storyboard */,
+				1872624E1CC4EF71003340D7 /* LoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -190,11 +201,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183718271CC3950D003F3D6C /* TList.storyboard in Resources */,
-				1837182C1CC3953A003F3D6C /* Login.storyboard in Resources */,
 				183718141CC3882D003F3D6C /* Assets.xcassets in Resources */,
-				183718311CC39601003F3D6C /* LaunchScreen.storyboard in Resources */,
+				1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */,
+				1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */,
+				187262511CC4F031003340D7 /* TList.storyboard in Resources */,
 				183718251CC394E1003F3D6C /* TListCell.xib in Resources */,
+				183718381CC3BE6F003F3D6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,32 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1837182E1CC39546003F3D6C /* LoginViewController.swift in Sources */,
-				183718291CC3951D003F3D6C /* TListTableViewController.swift in Sources */,
+				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
+				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
+				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
+				187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1837182A1CC3953A003F3D6C /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1837182B1CC3953A003F3D6C /* Base */,
-			);
-			name = Login.storyboard;
-			sourceTree = "<group>";
-		};
-		1837182F1CC39601003F3D6C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183718301CC39601003F3D6C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		183718191CC3882D003F3D6C /* Debug */ = {
@@ -369,10 +364,13 @@
 			baseConfigurationReference = C5CA634E12E4070F329CF0C3 /* Pods-AmazingTutor_New.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JulyYang.AmazingTutor-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmazingTutor_New/AmazingTutor_New-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -381,10 +379,12 @@
 			baseConfigurationReference = E2E13E65F58D25A1CA326729 /* Pods-AmazingTutor_New.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JulyYang.AmazingTutor-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmazingTutor_New/AmazingTutor_New-Bridging-Header.h";
 			};
 			name = Release;
 		};
