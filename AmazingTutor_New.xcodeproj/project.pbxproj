@@ -16,6 +16,9 @@
 		1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872624E1CC4EF71003340D7 /* LoginViewController.swift */; };
 		187262511CC4F031003340D7 /* TList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187262501CC4F031003340D7 /* TList.storyboard */; };
 		187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187262521CC4F076003340D7 /* TListTableViewController.swift */; };
+		18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */; };
+		18C07BD31CC612DD007989C5 /* TInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */; };
+		18C07BD51CC6290B007989C5 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD41CC6290B007989C5 /* Rating.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */; };
@@ -34,6 +37,9 @@
 		1872624E1CC4EF71003340D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		187262501CC4F031003340D7 /* TList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TList.storyboard; sourceTree = "<group>"; };
 		187262521CC4F076003340D7 /* TListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListTableViewController.swift; sourceTree = "<group>"; };
+		18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TInfoTableViewCell.swift; sourceTree = "<group>"; };
+		18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TInfoTableViewCell.xib; sourceTree = "<group>"; };
+		18C07BD41CC6290B007989C5 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingTutor_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,9 @@
 		183718211CC39431003F3D6C /* Teacher Personal Info */ = {
 			isa = PBXGroup;
 			children = (
+				18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */,
+				18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */,
+				18C07BD41CC6290B007989C5 /* Rating.swift */,
 			);
 			name = "Teacher Personal Info";
 			sourceTree = "<group>";
@@ -105,11 +114,11 @@
 		183718221CC39442003F3D6C /* Teacher List */ = {
 			isa = PBXGroup;
 			children = (
-				183718241CC394E1003F3D6C /* TListCell.xib */,
 				187262501CC4F031003340D7 /* TList.storyboard */,
-				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
-				18E9DDF41CC473B3000896EC /* TListCell.swift */,
 				187262521CC4F076003340D7 /* TListTableViewController.swift */,
+				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
+				183718241CC394E1003F3D6C /* TListCell.xib */,
+				18E9DDF41CC473B3000896EC /* TListCell.swift */,
 			);
 			name = "Teacher List";
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C07BD31CC612DD007989C5 /* TInfoTableViewCell.xib in Resources */,
 				183718141CC3882D003F3D6C /* Assets.xcassets in Resources */,
 				1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */,
 				1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */,
@@ -269,7 +279,9 @@
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
+				18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */,
 				187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */,
+				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

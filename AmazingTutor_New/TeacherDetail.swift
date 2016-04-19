@@ -11,13 +11,15 @@ import SwiftyJSON
 
 class Teacher {
     var TeacherVideoURL: JSON?
-    var TeacherImageURL: JSON?
+    var TeacherImageURL: String?
     var TeacherNationalityImage: UIImage?
     var TeacherName: String?
     var CommentNumber: Int?
-    var StarsNumber: String?
+    var StarScores: String?
     var Languages : [String]?
     var Rate: Int?
     var Trail: Bool?
+    var TeacherSelfIntro: String?
+    var TeacherBackground: JSON?
     
 }
