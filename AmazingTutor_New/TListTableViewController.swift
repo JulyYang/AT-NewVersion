@@ -12,7 +12,7 @@ import SwiftyJSON
 
 private let reuseIdentifier = "Tcell"
 
-let TInfoURL = ""
+let TInfoURL = "http://127.0.0.1:8080/customers"
 var TListArray = [Teacher]()
 var ArrayNumber: Int?
 
@@ -37,33 +37,33 @@ class TListTableViewController: UITableViewController {
 //        self.definesPresentationContext = true
 //        
 //        self.setLeftButton()
-        
-        Alamofire.request(.GET, TInfoURL).responseJSON { (response) in
-            let TDatabase = JSON(response.result.value!)
-            
-            for (_,Tjson):(String, JSON) in TDatabase{
-                
-                let teacherList = Teacher()
-                let languageArray : String?
-                
-                teacherList.TeacherVideoURL = Tjson["teacher_video"]
-                teacherList.TeacherImageURL = Tjson["teacher_image"].stringValue
-//                teacherList.TeacherNationalityImage = Tjson["teacher_nationality_flag"]
-                teacherList.TeacherName = Tjson["teacher_name"].stringValue
-                teacherList.CommentNumber = Tjson["comment_number"].intValue
-                teacherList.StarScores = Tjson["star_scores"].stringValue
-                languageArray = Tjson["languages"].stringValue
-                teacherList.Languages = [languageArray!]
-                teacherList.Rate = Tjson["tuition_rate"].intValue
-                teacherList.Trail = Tjson["teacher_trail"].boolValue
-                teacherList.TeacherSelfIntro = Tjson["teacher_self_introduction"].stringValue
-                teacherList.TeacherBackground = Tjson["teacher_background"]
-                
-                TListArray.append(teacherList)
-            }
-                self.tableView.reloadData()
-            
-        }
+//        
+//        Alamofire.request(.GET, TInfoURL).responseJSON { (response) in
+//            let TDatabase = JSON(response.result.value!)
+//            
+//            for (_,Tjson):(String, JSON) in TDatabase{
+//                
+//                let teacherList = Teacher()
+//                let languageArray : String?
+//                
+//                teacherList.TeacherVideoURL = Tjson["teacher_video"]
+//                teacherList.TeacherImageURL = Tjson["teacher_image"].stringValue
+////                teacherList.TeacherNationalityImage = Tjson["teacher_nationality_flag"]
+//                teacherList.TeacherName = Tjson["teacher_name"].stringValue
+//                teacherList.CommentNumber = Tjson["comment_number"].intValue
+//                teacherList.StarScores = Tjson["star_scores"].stringValue
+//                languageArray = Tjson["languages"].stringValue
+//                teacherList.Languages = [languageArray!]
+//                teacherList.Rate = Tjson["tuition_rate"].intValue
+//                teacherList.Trail = Tjson["teacher_trail"].boolValue
+//                teacherList.TeacherSelfIntro = Tjson["teacher_self_introduction"].stringValue
+//                teacherList.TeacherBackground = Tjson["teacher_background"]
+//                
+//                TListArray.append(teacherList)
+//            }
+//                self.tableView.reloadData()
+//            
+//        }
 
     }
     

@@ -8,12 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate {
-    
+class LoginViewController: UIViewController {
+//, GIDSignInUIDelegate {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//        GIDSignIn.sharedInstance().uiDelegate = self
         
-        GIDSignIn.sharedInstance().uiDelegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,6 +10,8 @@ pod 'FBSDKShareKit'
 pod 'Google/SignIn'
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'Fabric'
+pod 'Crashlytics'
 
 
 end

@@ -19,6 +19,12 @@
 		18C07BD51CC6290B007989C5 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD41CC6290B007989C5 /* Rating.swift */; };
 		18C07BD71CC637BF007989C5 /* TListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD61CC637BF007989C5 /* TListCell.xib */; };
 		18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */; };
+		18C4685A1CC6555E00890A97 /* TInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468591CC6555E00890A97 /* TInfoTableViewController.swift */; };
+		18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4685C1CC656DC00890A97 /* TBackgroundCell.swift */; };
+		18C4685F1CC656DC00890A97 /* TBackgroundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C4685D1CC656DC00890A97 /* TBackgroundCell.xib */; };
+		18C468611CC6592600890A97 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468601CC6592600890A97 /* Background.swift */; };
+		18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C468631CC65BCB00890A97 /* RatingCell.xib */; };
+		18C468671CC65D6000890A97 /* RatingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468661CC65D6000890A97 /* RatingTable.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */; };
@@ -40,6 +46,12 @@
 		18C07BD41CC6290B007989C5 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		18C07BD61CC637BF007989C5 /* TListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TListCell.xib; sourceTree = "<group>"; };
 		18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18C468591CC6555E00890A97 /* TInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TInfoTableViewController.swift; sourceTree = "<group>"; };
+		18C4685C1CC656DC00890A97 /* TBackgroundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBackgroundCell.swift; sourceTree = "<group>"; };
+		18C4685D1CC656DC00890A97 /* TBackgroundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBackgroundCell.xib; sourceTree = "<group>"; };
+		18C468601CC6592600890A97 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		18C468631CC65BCB00890A97 /* RatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		18C468661CC65D6000890A97 /* RatingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTable.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingTutor_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,13 +92,11 @@
 		1837180B1CC3882D003F3D6C /* AmazingTutor_New */ = {
 			isa = PBXGroup;
 			children = (
+				18C4685B1CC6558A00890A97 /* AT */,
 				183718231CC3944D003F3D6C /* Login */,
 				183718221CC39442003F3D6C /* Teacher List */,
 				183718211CC39431003F3D6C /* Teacher Personal Info */,
 				183718201CC39419003F3D6C /* AT Documents */,
-				1837180C1CC3882D003F3D6C /* AppDelegate.swift */,
-				1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */,
-				183718131CC3882D003F3D6C /* Assets.xcassets */,
 			);
 			path = AmazingTutor_New;
 			sourceTree = "<group>";
@@ -104,9 +114,15 @@
 		183718211CC39431003F3D6C /* Teacher Personal Info */ = {
 			isa = PBXGroup;
 			children = (
+				18C468591CC6555E00890A97 /* TInfoTableViewController.swift */,
 				18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */,
 				18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */,
+				18C468601CC6592600890A97 /* Background.swift */,
+				18C4685C1CC656DC00890A97 /* TBackgroundCell.swift */,
+				18C4685D1CC656DC00890A97 /* TBackgroundCell.xib */,
 				18C07BD41CC6290B007989C5 /* Rating.swift */,
+				18C468661CC65D6000890A97 /* RatingTable.swift */,
+				18C468631CC65BCB00890A97 /* RatingCell.xib */,
 			);
 			name = "Teacher Personal Info";
 			sourceTree = "<group>";
@@ -130,6 +146,16 @@
 				1872624E1CC4EF71003340D7 /* LoginViewController.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		18C4685B1CC6558A00890A97 /* AT */ = {
+			isa = PBXGroup;
+			children = (
+				1837180C1CC3882D003F3D6C /* AppDelegate.swift */,
+				1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */,
+				183718131CC3882D003F3D6C /* Assets.xcassets */,
+			);
+			name = AT;
 			sourceTree = "<group>";
 		};
 		30A6D91EB7DD66A7CBAAE881 /* Frameworks */ = {
@@ -162,6 +188,7 @@
 				183718071CC3882D003F3D6C /* Resources */,
 				5F8A2D297AC75107EED788B3 /* Embed Pods Frameworks */,
 				C4C83D93D6EA93D97D57700E /* Copy Pods Resources */,
+				180099A81CC6ABC100970C65 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,12 +237,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C4685F1CC656DC00890A97 /* TBackgroundCell.xib in Resources */,
 				18C07BD31CC612DD007989C5 /* TInfoTableViewCell.xib in Resources */,
 				183718141CC3882D003F3D6C /* Assets.xcassets in Resources */,
 				1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */,
 				1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */,
 				187262511CC4F031003340D7 /* TList.storyboard in Resources */,
 				18C07BD71CC637BF007989C5 /* TListCell.xib in Resources */,
+				18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */,
 				18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +252,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		180099A81CC6ABC100970C65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e54e14cebccd5bbe7049b3eca4c32886cd037ccd 61db3ac556266193e2ca335d8718c83e298493a567e2efdd0b84549b9572e037";
+		};
 		5CF8A55337F51961E60D2222 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,13 +317,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C4685A1CC6555E00890A97 /* TInfoTableViewController.swift in Sources */,
 				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
+				18C468671CC65D6000890A97 /* RatingTable.swift in Sources */,
+				18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
 				18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */,
 				187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */,
 				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
+				18C468611CC6592600890A97 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

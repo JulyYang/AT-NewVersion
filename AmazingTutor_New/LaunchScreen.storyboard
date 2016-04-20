@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,12 +23,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenPic" translatesAutoresizingMaskIntoConstraints="NO" id="e3y-Pc-d35">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmazingTutor_text" translatesAutoresizingMaskIntoConstraints="NO" id="o5y-qs-iZu">
-                                <rect key="frame" x="200" y="100" width="200" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmazingTutor" translatesAutoresizingMaskIntoConstraints="NO" id="o5y-qs-iZu">
+                                <rect key="frame" x="200" y="125" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5fM-nc-MIK"/>
                                     <constraint firstAttribute="width" constant="200" id="BC1-Rc-V2e"/>
+                                    <constraint firstAttribute="width" secondItem="o5y-qs-iZu" secondAttribute="height" multiplier="4:1" id="crV-aw-ANF"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5fM-nc-MIK"/>
+                                        <exclude reference="BC1-Rc-V2e"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,6 +48,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="e3y-Pc-d35" secondAttribute="trailing" constant="-20" id="P5c-IA-5kc"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="RFX-a2-gdp"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="b0g-y9-AfW"/>
+                            <constraint firstItem="o5y-qs-iZu" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="eLL-R2-ftN"/>
+                            <constraint firstItem="o5y-qs-iZu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.5" id="gg4-SB-fjn"/>
+                            <constraint firstItem="e3y-Pc-d35" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kk0-bk-p0X"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="80" id="lIX-ki-dMK"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="wGI-sk-d9X"/>
                         </constraints>
@@ -47,6 +59,8 @@
                                 <exclude reference="01U-uG-4Kq"/>
                                 <exclude reference="51g-zv-DuU"/>
                                 <exclude reference="P5c-IA-5kc"/>
+                                <exclude reference="b0g-y9-AfW"/>
+                                <exclude reference="lIX-ki-dMK"/>
                                 <exclude reference="RFX-a2-gdp"/>
                             </mask>
                         </variation>
@@ -58,7 +72,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AmazingTutor_text" width="184" height="29"/>
+        <image name="AmazingTutor" width="184" height="29"/>
         <image name="LaunchScreenPic" width="375" height="667"/>
     </resources>
 </document>

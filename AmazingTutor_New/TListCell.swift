@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class TListCell: UITableViewCell {
     
-    @IBOutlet weak var VideoFrame: UIWebView!
+    @IBOutlet weak var VideoFrame: UIView!
     @IBOutlet weak var TaecherImage: UIImageView!
     @IBOutlet weak var TeacherNameLabel: UILabel!
     @IBOutlet weak var StarLabel: UILabel!
