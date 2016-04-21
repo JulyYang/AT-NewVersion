@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return FBSDKApplicationDelegate.sharedInstance().application(application,didFinishLaunchingWithOptions: launchOptions)
     }
     
+    
     func fbTokenChangeNoti (noti:NSNotification){
         if FBSDKAccessToken.currentAccessToken() != nil{
             

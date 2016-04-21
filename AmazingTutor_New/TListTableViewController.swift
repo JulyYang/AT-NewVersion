@@ -12,7 +12,6 @@ import SwiftyJSON
 
 private let reuseIdentifier = "Tcell"
 
-let TInfoURL = "http://127.0.0.1:8080/customers"
 var TListArray = [Teacher]()
 var ArrayNumber: Int?
 
@@ -22,6 +21,12 @@ class TListTableViewController: UITableViewController {
 
 //    var TeacherSearchController: UISearchController!
     
+    
+//    @IBAction func AlertTest(sender: AnyObject) {
+////        let PopOut = BookingSuccess()
+//        self.view.addSubview(BookingSuccess())
+//        print("okok")
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
