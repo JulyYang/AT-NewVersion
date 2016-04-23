@@ -9,10 +9,12 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import YouTubePlayer
+
 
 class TListCell: UITableViewCell {
     
-    @IBOutlet weak var VideoFrame: UIView!
+    @IBOutlet weak var TeacherVideo: YouTubePlayerView!
     @IBOutlet weak var TaecherImage: UIImageView!
     @IBOutlet weak var TeacherNameLabel: UILabel!
     @IBOutlet weak var StarLabel: UILabel!
@@ -21,6 +23,7 @@ class TListCell: UITableViewCell {
     @IBOutlet weak var RateLabel: UILabel!
     @IBOutlet weak var TrailLabel: UILabel!
     @IBOutlet weak var TNationalityImage: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

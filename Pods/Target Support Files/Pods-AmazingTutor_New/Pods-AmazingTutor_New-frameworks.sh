@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AmazingTutor_New/FBSDKLoginKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKShareKit.framework"
   install_framework "Pods-AmazingTutor_New/SwiftyJSON.framework"
+  install_framework "Pods-AmazingTutor_New/YouTubePlayer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AmazingTutor_New/Alamofire.framework"
@@ -98,4 +99,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AmazingTutor_New/FBSDKLoginKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKShareKit.framework"
   install_framework "Pods-AmazingTutor_New/SwiftyJSON.framework"
+  install_framework "Pods-AmazingTutor_New/YouTubePlayer.framework"
 fi

@@ -144,9 +144,9 @@
 			children = (
 				187262501CC4F031003340D7 /* TList.storyboard */,
 				187262521CC4F076003340D7 /* TListTableViewController.swift */,
-				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				18C07BD61CC637BF007989C5 /* TListCell.xib */,
 				18E9DDF41CC473B3000896EC /* TListCell.swift */,
+				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				1894682D1CC88039003581E9 /* BaseURL.swift */,
 				189468391CC88F81003581E9 /* BookingSuccess.swift */,
 				189468351CC88BB6003581E9 /*  BookingSuccess.xib */,

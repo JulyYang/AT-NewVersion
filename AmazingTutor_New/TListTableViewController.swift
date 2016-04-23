@@ -10,8 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-private let reuseIdentifier = "Tcell"
-
 var TListArray = [Teacher]()
 var ArrayNumber: Int?
 
@@ -19,16 +17,16 @@ var ArrayNumber: Int?
 class TListTableViewController: UITableViewController {
 //,UISearchResultsUpdating,UISearchBarDelegate {
 
-//    var TeacherSearchController: UISearchController!
     
+    @IBOutlet weak var TListTable: UITableView!
     
-//    @IBAction func AlertTest(sender: AnyObject) {
-////        let PopOut = BookingSuccess()
-//        self.view.addSubview(BookingSuccess())
-//        print("okok")
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.TListTable.registerNib(UINib(nibName: "TListCell", bundle: nil), forCellReuseIdentifier: "Tcell")
+        
+//        TListTable.rowHeight = UITableViewAutomaticDimension
+        
         
 //        self.TeacherSearchController = UISearchController(searchResultsController: nil)
 //        self.TeacherSearchController.searchResultsUpdater = self
@@ -98,61 +96,26 @@ class TListTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return TListArray.count
+        return 4
+//            TListArray.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath) as! TListCell
+        
+        let myURL = NSURL(string:"https://www.youtube.com/watch?v=LHCob76kigA")
+        cell.TeacherVideo.loadVideoURL(myURL!)
+        
+        cell.TaecherImage.image = UIImage(named: "Oval 155")
+        cell.TNationalityImage.image = UIImage(named: "ROC_FLAG")
+        cell.TeacherNameLabel.text = "BANANA YELLOW"
+        cell.LanguageLabel.text = "Chinese, English"
+        cell.CommentLabel.text = "132"
+        
 
 
         return cell
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
 }

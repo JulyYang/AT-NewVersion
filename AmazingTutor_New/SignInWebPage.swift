@@ -20,15 +20,10 @@ class SignInWebPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let webView = WKWebView(frame: self.SignWebView.bounds)
-//        self.SignWebView.addSubview(webView)
-        
         let SignInurl = NSURL(string: "https://www.google.com")
         let request = NSURLRequest(URL: SignInurl!)
         SignWebView.loadRequest(request)
         
-//        let SignInurl = NSURL(string: "http://www.google.com")
-//        UIApplication.sharedApplication().openURL(SignInurl!)
     }
 
     override func didReceiveMemoryWarning() {

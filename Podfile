@@ -12,6 +12,8 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'YouTubePlayer'
+
 
 
 

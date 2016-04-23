@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 class Teacher {
-    var TeacherVideoURL: JSON?
+    var TeacherVideoURL: UIImage?
     var TeacherImageURL: String?
     var TeacherNationalityImage: UIImage?
     var TeacherName: String?
