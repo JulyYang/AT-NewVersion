@@ -23,6 +23,14 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 改這個view controller的status bar顏色
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        // 建立tableview header
+        let TeacherWallHeaderView = UIView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.layer.frame.height/4))
+        TeacherWallHeaderView.backgroundColor = UIColor(red: 255.0/255.0, green: 95.0/255.0, blue: 95.0/255.0, alpha: 1.0)
+        self.TListTable.tableHeaderView = TeacherWallHeaderView
+        
         // 註冊nib，讓tableview認識xib檔
         self.TListTable.registerNib(UINib(nibName: "TListCell", bundle: nil), forCellReuseIdentifier: "Tcell")
         
@@ -32,15 +40,16 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         self.searchController.delegate = self
         self.searchController.searchBar.delegate = self
         
+        // 改search bar的背景顏色、裡面的字體顏色、user輸入的字體顏色
         let searchTeacherField = self.searchController.searchBar.valueForKey("searchField") as! UITextField
-        searchTeacherField.backgroundColor = UIColor(red: 175.0/255.0, green: 41.0/255.0, blue: 41.0/255.0, alpha: 1.0)
+        searchTeacherField.backgroundColor = UIColor(red: 160.0/255.0, green: 36.0/255.0, blue: 36.0/255.0, alpha: 1.0)
+        searchTeacherField.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        searchTeacherField.textColor = UIColor.whiteColor()
+        
         
         // 改search bar的顏色，但是整個workspace內的都會更改，連search controller內很多的subview都會跟著更動
-//        if #available(iOS 9.0, *) {
-//        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = UIColor.brownColor()
-//        } else {
-//            // Fallback on earlier versions
-//        }
+//        if #available(iOS 9.0, *) { UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = UIColor.brownColor()} 
+//        else { Fallback on earlier versions}
 
         
         self.searchController.hidesNavigationBarDuringPresentation = false
@@ -48,7 +57,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         
         // 讓search bar顯示在navigation bar之上，並改變navigationbar的顏色
         self.navigationItem.titleView = searchController.searchBar
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 199.0/255.0, green: 60.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
         
         self.definesPresentationContext = true
         
@@ -80,12 +89,11 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
 //                TListArray.append(teacherList)
 //            }
 //                self.tableView.reloadData()
-//            
+//        
 //        }
 
+        
     }
-    
-    
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         print("hello")
@@ -93,23 +101,17 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 4
 //            TListArray.count
     }
     
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath) as! TListCell
@@ -122,10 +124,15 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         cell.TeacherNameLabel.text = "BANANA YELLOW"
         cell.LanguageLabel.text = "Chinese, English"
         cell.CommentLabel.text = "132"
-        
-
 
         return cell
+    }
+    
+//    讓status bar回到預設值
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
     
 }
