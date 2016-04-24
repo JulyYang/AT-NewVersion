@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let RootStoryboard = UIStoryboard(name: "TList", bundle: nil)
             let RootController = RootStoryboard.instantiateViewControllerWithIdentifier("MainTabBarController")
             
-            print("token: \(FBSDKAccessToken.currentAccessToken())")
+            print("token: \(FBSDKAccessToken.currentAccessToken().tokenString)")
             print("jk")
             
             if self.window != nil{

@@ -14,33 +14,48 @@ var TListArray = [Teacher]()
 var ArrayNumber: Int?
 
 
-class TListTableViewController: UITableViewController {
-//,UISearchResultsUpdating,UISearchBarDelegate {
-
+class TListTableViewController: UITableViewController, UISearchControllerDelegate, UISearchResultsUpdating,UISearchBarDelegate {
     
     @IBOutlet weak var TListTable: UITableView!
+    
+    var searchController: UISearchController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 註冊nib，讓tableview認識xib檔
         self.TListTable.registerNib(UINib(nibName: "TListCell", bundle: nil), forCellReuseIdentifier: "Tcell")
+        
+        // 建立search bar
+        self.searchController = UISearchController(searchResultsController: nil)
+        self.searchController.searchResultsUpdater = self
+        self.searchController.delegate = self
+        self.searchController.searchBar.delegate = self
+        
+        let searchTeacherField = self.searchController.searchBar.valueForKey("searchField") as! UITextField
+        searchTeacherField.backgroundColor = UIColor(red: 175.0/255.0, green: 41.0/255.0, blue: 41.0/255.0, alpha: 1.0)
+        
+        // 改search bar的顏色，但是整個workspace內的都會更改，連search controller內很多的subview都會跟著更動
+//        if #available(iOS 9.0, *) {
+//        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = UIColor.brownColor()
+//        } else {
+//            // Fallback on earlier versions
+//        }
+
+        
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.dimsBackgroundDuringPresentation = true
+        
+        // 讓search bar顯示在navigation bar之上，並改變navigationbar的顏色
+        self.navigationItem.titleView = searchController.searchBar
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 199.0/255.0, green: 60.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+        
+        self.definesPresentationContext = true
         
 //        TListTable.rowHeight = UITableViewAutomaticDimension
         
         
-//        self.TeacherSearchController = UISearchController(searchResultsController: nil)
-//        self.TeacherSearchController.searchResultsUpdater = self
-////        self.TeacherSearchController.delegate = self
-//        self.TeacherSearchController.searchBar.delegate = self
-//        
-//        self.TeacherSearchController.hidesNavigationBarDuringPresentation = false
-//        self.TeacherSearchController.dimsBackgroundDuringPresentation = true
-//        
-//        self.navigationItem.titleView = TeacherSearchController.searchBar
-//        self.definesPresentationContext = true
-//        
-//        self.setLeftButton()
-//        
+//
 //        Alamofire.request(.GET, TInfoURL).responseJSON { (response) in
 //            let TDatabase = JSON(response.result.value!)
 //            
@@ -70,12 +85,6 @@ class TListTableViewController: UITableViewController {
 
     }
     
-//    func setLeftButton(){
-//        let LeftButton = UIButton(frame:CGRectMake(0,0,30,30))
-//        LeftButton.setBackgroundImage(UIImage(named: "speech_bubble"), forState: .Normal)
-//        LeftButton.adjustsImageWhenHighlighted = false
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView:LeftButton)
-//    }
     
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
@@ -99,6 +108,7 @@ class TListTableViewController: UITableViewController {
         return 4
 //            TListArray.count
     }
+    
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
