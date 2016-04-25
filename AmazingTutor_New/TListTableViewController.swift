@@ -23,6 +23,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // 改這個view controller的status bar顏色
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
@@ -46,11 +47,6 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         searchTeacherField.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
         searchTeacherField.textColor = UIColor.whiteColor()
         
-        
-        // 改search bar的顏色，但是整個workspace內的都會更改，連search controller內很多的subview都會跟著更動
-//        if #available(iOS 9.0, *) { UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = UIColor.brownColor()} 
-//        else { Fallback on earlier versions}
-
         
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = true
@@ -112,6 +108,13 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
 //            TListArray.count
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let row = indexPath.row
+        print("\(row)")
+        
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath) as! TListCell
@@ -119,7 +122,8 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         let myURL = NSURL(string:"https://www.youtube.com/watch?v=LHCob76kigA")
         cell.TeacherVideo.loadVideoURL(myURL!)
         
-        cell.TaecherImage.image = UIImage(named: "Oval 155")
+        cell.TeacherImage.image = UIImage(named: "Bob_minions_hands")
+        cell.TeacherImage.layer.cornerRadius = 60.0 // 改不到xib內的圖檔
         cell.TNationalityImage.image = UIImage(named: "ROC_FLAG")
         cell.TeacherNameLabel.text = "BANANA YELLOW"
         cell.LanguageLabel.text = "Chinese, English"
@@ -128,11 +132,21 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         return cell
     }
     
-//    讓status bar回到預設值
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "ShowTDetail" {
+//            let indexPath = TListTable.indexPathForSelectedRow
+//            let TDetailVC = segue.destinationViewController as! TInfoTableViewController
+//            TDetailVC.TDetailIndex = (indexPath!.row)
+//            
+//            print("789")
+//        }
+//
+//    }
+
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
+        // 讓status bar回到預設值
+//        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
     
 }

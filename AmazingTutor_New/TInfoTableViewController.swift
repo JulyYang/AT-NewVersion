@@ -9,7 +9,10 @@
 import UIKit
 
 class TInfoTableViewController: UITableViewController {
+    
+    var TDetailIndex : Int?
 
+    @IBOutlet weak var TDetailTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

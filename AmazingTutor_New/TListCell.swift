@@ -15,7 +15,7 @@ import YouTubePlayer
 class TListCell: UITableViewCell {
     
     @IBOutlet weak var TeacherVideo: YouTubePlayerView!
-    @IBOutlet weak var TaecherImage: UIImageView!
+    @IBOutlet weak var TeacherImage: UIImageView!
     @IBOutlet weak var TeacherNameLabel: UILabel!
     @IBOutlet weak var StarLabel: UILabel!
     @IBOutlet weak var CommentLabel: UILabel!
