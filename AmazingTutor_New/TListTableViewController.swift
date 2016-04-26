@@ -109,9 +109,14 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let TeacherCell = TListTable.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath)
+        self.performSegueWithIdentifier("ShowTDetail", sender: TeacherCell)
+//        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
+//        self.performSegueWithIdentifier("ShowTDetail", sender: tableView)
         
         let row = indexPath.row
+        
         print("\(row)")
         
     }
@@ -119,7 +124,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath) as! TListCell
         
-        let myURL = NSURL(string:"https://www.youtube.com/watch?v=LHCob76kigA")
+        let myURL = NSURL(string:"https://www.youtube.com/watch?v=sFukyIIM1XI")
         cell.TeacherVideo.loadVideoURL(myURL!)
         
         cell.TeacherImage.image = UIImage(named: "Bob_minions_hands")
@@ -132,17 +137,6 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         return cell
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "ShowTDetail" {
-//            let indexPath = TListTable.indexPathForSelectedRow
-//            let TDetailVC = segue.destinationViewController as! TInfoTableViewController
-//            TDetailVC.TDetailIndex = (indexPath!.row)
-//            
-//            print("789")
-//        }
-//
-//    }
-
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         // 讓status bar回到預設值

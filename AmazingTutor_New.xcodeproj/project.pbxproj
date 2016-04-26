@@ -20,6 +20,12 @@
 		1894683A1CC88F81003581E9 /* BookingSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189468391CC88F81003581E9 /* BookingSuccess.swift */; };
 		189EB2E11CCDB1EE00F6D758 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */; };
 		189EB2E21CCDB1EE00F6D758 /* ClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */; };
+		189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */; };
+		189EB2E71CCE2F6E00F6D758 /* ProfileImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EB2E61CCE2F6E00F6D758 /* ProfileImageCell.xib */; };
+		189EB2EB1CCE308D00F6D758 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EB2EA1CCE308D00F6D758 /* ProfileCell.xib */; };
+		189EB2ED1CCE31A000F6D758 /* StudentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */; };
+		18A0491C1CCE826600600FED /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0491B1CCE826600600FED /* ProfileImageCell.swift */; };
+		18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0491D1CCE827B00600FED /* ProfileCell.swift */; };
 		18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */; };
 		18C07BD31CC612DD007989C5 /* TInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */; };
 		18C07BD51CC6290B007989C5 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD41CC6290B007989C5 /* Rating.swift */; };
@@ -55,6 +61,12 @@
 		189468391CC88F81003581E9 /* BookingSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingSuccess.swift; sourceTree = "<group>"; };
 		189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassCell.xib; sourceTree = "<group>"; };
+		189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		189EB2E61CCE2F6E00F6D758 /* ProfileImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileImageCell.xib; sourceTree = "<group>"; };
+		189EB2EA1CCE308D00F6D758 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetail.swift; sourceTree = "<group>"; };
+		18A0491B1CCE826600600FED /* ProfileImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
+		18A0491D1CCE827B00600FED /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		18C07BD01CC612DD007989C5 /* TInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TInfoTableViewCell.swift; sourceTree = "<group>"; };
 		18C07BD11CC612DD007989C5 /* TInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TInfoTableViewCell.xib; sourceTree = "<group>"; };
 		18C07BD41CC6290B007989C5 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
@@ -108,6 +120,10 @@
 		1837180B1CC3882D003F3D6C /* AmazingTutor_New */ = {
 			isa = PBXGroup;
 			children = (
+				187262501CC4F031003340D7 /* TList.storyboard */,
+				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
+				189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */,
+				189EB2E31CCE1DA100F6D758 /* Profile */,
 				189EB2DE1CCDB07800F6D758 /* Classes */,
 				18C4685B1CC6558A00890A97 /* AT */,
 				183718231CC3944D003F3D6C /* Login */,
@@ -147,11 +163,9 @@
 		183718221CC39442003F3D6C /* Teacher List */ = {
 			isa = PBXGroup;
 			children = (
-				187262501CC4F031003340D7 /* TList.storyboard */,
 				187262521CC4F076003340D7 /* TListTableViewController.swift */,
 				18C07BD61CC637BF007989C5 /* TListCell.xib */,
 				18E9DDF41CC473B3000896EC /* TListCell.swift */,
-				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				1894682D1CC88039003581E9 /* BaseURL.swift */,
 				189468391CC88F81003581E9 /* BookingSuccess.swift */,
 				189468351CC88BB6003581E9 /*  BookingSuccess.xib */,
@@ -178,6 +192,18 @@
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		189EB2E31CCE1DA100F6D758 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */,
+				18A0491D1CCE827B00600FED /* ProfileCell.swift */,
+				189EB2EA1CCE308D00F6D758 /* ProfileCell.xib */,
+				18A0491B1CCE826600600FED /* ProfileImageCell.swift */,
+				189EB2E61CCE2F6E00F6D758 /* ProfileImageCell.xib */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		18C4685B1CC6558A00890A97 /* AT */ = {
@@ -272,6 +298,7 @@
 				18C4685F1CC656DC00890A97 /* TBackgroundCell.xib in Resources */,
 				18C07BD31CC612DD007989C5 /* TInfoTableViewCell.xib in Resources */,
 				183718141CC3882D003F3D6C /* Assets.xcassets in Resources */,
+				189EB2EB1CCE308D00F6D758 /* ProfileCell.xib in Resources */,
 				1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */,
 				189EB2E21CCDB1EE00F6D758 /* ClassCell.xib in Resources */,
 				1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */,
@@ -279,6 +306,7 @@
 				18C07BD71CC637BF007989C5 /* TListCell.xib in Resources */,
 				189468361CC88BB6003581E9 /*  BookingSuccess.xib in Resources */,
 				18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */,
+				189EB2E71CCE2F6E00F6D758 /* ProfileImageCell.xib in Resources */,
 				18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */,
 				18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */,
 			);
@@ -354,11 +382,14 @@
 			files = (
 				189EB2E11CCDB1EE00F6D758 /* ClassCell.swift in Sources */,
 				18C4685A1CC6555E00890A97 /* TInfoTableViewController.swift in Sources */,
+				189EB2ED1CCE31A000F6D758 /* StudentDetail.swift in Sources */,
 				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
 				1894682E1CC88039003581E9 /* BaseURL.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
+				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
+				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
 				1894683A1CC88F81003581E9 /* BookingSuccess.swift in Sources */,
 				18C468671CC65D6000890A97 /* RatingTable.swift in Sources */,
 				18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */,
@@ -366,6 +397,7 @@
 				18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */,
 				187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */,
 				1894682C1CC868B9003581E9 /* SignInWebPage.swift in Sources */,
+				18A0491C1CCE826600600FED /* ProfileImageCell.swift in Sources */,
 				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
 				18C468611CC6592600890A97 /* Background.swift in Sources */,
 			);
