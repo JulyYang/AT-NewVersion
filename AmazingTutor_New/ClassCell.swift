@@ -10,6 +10,11 @@ import UIKit
 
 class ClassCell: UITableViewCell {
 
+    @IBOutlet weak var BookedTeacherImage: UIImageView!
+    @IBOutlet weak var BookedCourseTitle: UILabel!
+    @IBOutlet weak var BookedDate: UILabel!
+    @IBOutlet weak var BookedTime: UILabel!
+    @IBOutlet weak var BookedTeacherName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

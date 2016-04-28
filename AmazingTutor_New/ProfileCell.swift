@@ -9,17 +9,24 @@
 import UIKit
 
 protocol ProfileCellDelegate: class {
-    
+    func DoNothing()
 }
 
 class ProfileCell: UITableViewCell {
-
+    
+    weak var testDelegate: ProfileCellDelegate?
+    
     @IBOutlet weak var ProfileItem: UILabel!
     @IBOutlet weak var UserTextField: UITextField!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        testDelegate?.DoNothing(
+        print("backgroundImage")
+        )
+        
+        self.selectionStyle = .None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

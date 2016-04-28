@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import DGElasticPullToRefresh
 
 var TListArray = [Teacher]()
 var ArrayNumber: Int?
@@ -51,13 +52,22 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = true
         
-        // 讓search bar顯示在navigation bar之上，並改變navigationbar的顏色
-        self.navigationItem.titleView = searchController.searchBar
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        NavigationSetting()
         
         self.definesPresentationContext = true
         
-//        TListTable.rowHeight = UITableViewAutomaticDimension
+//        頁面下拉更新效果
+//        Initialize tableView
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 74.0/255.0, green: 74.0/255.0, blue: 74.0/255.0, alpha: 0.6)
+        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            // Do not forget to call dg_stopLoading() at the end
+            self?.tableView.dg_stopLoading()
+            }, loadingView: loadingView)
+        tableView.dg_setPullToRefreshFillColor(UIColor.whiteColor())
+//            (red: 166.0/255.0, green: 33.0/255.0, blue: 37.0/255.0, alpha: 1.0))
+        tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
         
         
 //
@@ -128,11 +138,13 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         cell.TeacherVideo.loadVideoURL(myURL!)
         
         cell.TeacherImage.image = UIImage(named: "Bob_minions_hands")
-        cell.TeacherImage.layer.cornerRadius = 60.0 // 改不到xib內的圖檔
+        cell.TeacherImage.layer.cornerRadius = 60.0
         cell.TNationalityImage.image = UIImage(named: "ROC_FLAG")
-        cell.TeacherNameLabel.text = "BANANA YELLOW"
-        cell.LanguageLabel.text = "Chinese, English"
-        cell.CommentLabel.text = "132"
+        cell.TeacherNameLabel.text = "BANANA is the best"
+        cell.LanguageLabel.text = "Chinese, English, Bananise"
+        cell.RateLabel.text = "400 - 650 TWD/hour"
+        cell.TrailLabel.text = "Yes"
+        cell.CommentLabel.text = "(698)"
 
         return cell
     }
@@ -142,5 +154,12 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         // 讓status bar回到預設值
 //        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
     }
+    
+    // 讓search bar顯示在navigation bar之上，並改變navigationbar的顏色
+    func NavigationSetting() {
+        self.navigationItem.titleView = searchController.searchBar
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+    }
+
     
 }

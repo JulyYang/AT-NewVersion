@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AmazingTutor_New/Alamofire.framework"
   install_framework "Pods-AmazingTutor_New/Bolts.framework"
+  install_framework "Pods-AmazingTutor_New/DGElasticPullToRefresh.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKCoreKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKLoginKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKShareKit.framework"
@@ -95,6 +96,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AmazingTutor_New/Alamofire.framework"
   install_framework "Pods-AmazingTutor_New/Bolts.framework"
+  install_framework "Pods-AmazingTutor_New/DGElasticPullToRefresh.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKCoreKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKLoginKit.framework"
   install_framework "Pods-AmazingTutor_New/FBSDKShareKit.framework"

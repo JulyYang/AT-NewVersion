@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1832596D1CD075B0008FD1CD /* PropertySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832596C1CD075B0008FD1CD /* PropertySetting.swift */; };
 		1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837180C1CC3882D003F3D6C /* AppDelegate.swift */; };
 		183718141CC3882D003F3D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183718131CC3882D003F3D6C /* Assets.xcassets */; };
 		1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */; };
@@ -39,12 +40,14 @@
 		18C468671CC65D6000890A97 /* RatingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468661CC65D6000890A97 /* RatingTable.swift */; };
 		18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */; };
 		18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */; };
+		18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		717AF07B5A53E468BD60CBE8 /* Pods_AmazingTutor_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1832596C1CD075B0008FD1CD /* PropertySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySetting.swift; sourceTree = "<group>"; };
 		183718091CC3882D003F3D6C /* AmazingTutor_New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingTutor_New.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1837180C1CC3882D003F3D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		183718131CC3882D003F3D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		18C468661CC65D6000890A97 /* RatingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTable.swift; sourceTree = "<group>"; };
 		18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReuseCell.swift; sourceTree = "<group>"; };
 		18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInReuseCell.xib; sourceTree = "<group>"; };
+		18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewController.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		98683B160977E853F9CE9C57 /* Pods_AmazingTutor_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingTutor_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				187262501CC4F031003340D7 /* TList.storyboard */,
+				1832596C1CD075B0008FD1CD /* PropertySetting.swift */,
 				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */,
 				189EB2E31CCE1DA100F6D758 /* Profile */,
@@ -188,6 +193,7 @@
 		189EB2DE1CCDB07800F6D758 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */,
 				189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */,
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
 			);
@@ -198,10 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */,
-				18A0491D1CCE827B00600FED /* ProfileCell.swift */,
-				189EB2EA1CCE308D00F6D758 /* ProfileCell.xib */,
 				18A0491B1CCE826600600FED /* ProfileImageCell.swift */,
 				189EB2E61CCE2F6E00F6D758 /* ProfileImageCell.xib */,
+				18A0491D1CCE827B00600FED /* ProfileCell.swift */,
+				189EB2EA1CCE308D00F6D758 /* ProfileCell.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -385,10 +391,12 @@
 				189EB2ED1CCE31A000F6D758 /* StudentDetail.swift in Sources */,
 				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
 				1894682E1CC88039003581E9 /* BaseURL.swift in Sources */,
+				1832596D1CD075B0008FD1CD /* PropertySetting.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
 				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
+				18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */,
 				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
 				1894683A1CC88F81003581E9 /* BookingSuccess.swift in Sources */,
 				18C468671CC65D6000890A97 /* RatingTable.swift in Sources */,

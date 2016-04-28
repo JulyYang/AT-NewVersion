@@ -13,6 +13,7 @@ pod 'SwiftyJSON'
 pod 'Fabric'
 pod 'Crashlytics'
 pod 'YouTubePlayer'
+pod 'DGElasticPullToRefresh'
 
 
 

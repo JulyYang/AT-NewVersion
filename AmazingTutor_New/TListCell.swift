@@ -23,11 +23,12 @@ class TListCell: UITableViewCell {
     @IBOutlet weak var RateLabel: UILabel!
     @IBOutlet weak var TrailLabel: UILabel!
     @IBOutlet weak var TNationalityImage: UIImageView!
-    
+    @IBOutlet weak var TeacherSelfIntroLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.selectionStyle = .None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

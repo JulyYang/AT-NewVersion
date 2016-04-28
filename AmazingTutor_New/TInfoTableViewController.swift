@@ -16,8 +16,12 @@ class TInfoTableViewController: UITableViewController {
     @IBOutlet weak var TDetailTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("here")
         
+        self.TDetailTableView.registerNib(UINib(nibName: "TListCell",bundle: nil), forCellReuseIdentifier: "TDCell")
         self.TDetailTableView.registerNib(UINib(nibName: "TBackgroundCell",bundle: nil), forCellReuseIdentifier: "BCELL")
+        TDetailTableView.rowHeight = UITableViewAutomaticDimension
+        TDetailTableView.estimatedRowHeight = 200.0
         
         self.navigationItem.title = "BANANA YELLOW"
 
