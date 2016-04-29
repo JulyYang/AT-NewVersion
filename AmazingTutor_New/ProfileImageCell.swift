@@ -16,18 +16,19 @@ protocol ProfileImageCellDelegate: class {
 class ProfileImageCell: UITableViewCell,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     weak var PImageDelegate: ProfileImageCellDelegate?
+    let UserImagePicker = UIImagePickerController()
 
     @IBOutlet weak var UserProfileImage: UIImageView!
     @IBOutlet weak var UserProfileBackground: UIImageView!
     
     @IBAction func ChangeImage(sender: AnyObject) {
-        PImageDelegate?.ChangeImageForm()
+        
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
-            let UserImagePicker = UIImagePickerController()
             UserImagePicker.delegate = self
-            UserImagePicker.sourceType = .Camera
+            UserImagePicker.sourceType = UIImagePickerControllerSourceType.Camera
             UserImagePicker.allowsEditing = true
         }
+        PImageDelegate?.ChangeImageForm()
 
     }
     

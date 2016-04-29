@@ -20,9 +20,9 @@
                             <constraint firstAttribute="height" constant="170" id="CHW-uM-yJU"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmF-70-Jjg">
-                        <rect key="frame" x="390" y="139" width="46" height="30"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmF-70-Jjg">
+                        <rect key="frame" x="406" y="139" width="30" height="30"/>
+                        <state key="normal" image="add"/>
                         <connections>
                             <action selector="ChangeBackground:" destination="FZW-xV-CAa" eventType="touchUpInside" id="YAT-nG-tAg"/>
                         </connections>
@@ -33,9 +33,9 @@
                             <constraint firstAttribute="width" secondItem="njn-gD-bLd" secondAttribute="height" multiplier="1:1" id="dgX-0W-php"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-a1-DBL">
-                        <rect key="frame" x="230" y="113" width="46" height="30"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-a1-DBL">
+                        <rect key="frame" x="246" y="113" width="30" height="30"/>
+                        <state key="normal" image="add"/>
                         <connections>
                             <action selector="ChangeImage:" destination="FZW-xV-CAa" eventType="touchUpInside" id="1Ee-2S-WjS"/>
                         </connections>
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="501" y="51"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="add" width="30" height="30"/>
+    </resources>
 </document>

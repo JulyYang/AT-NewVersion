@@ -11,7 +11,8 @@ import UIKit
 class ProfileTableViewController: UITableViewController, ProfileImageCellDelegate, ProfileCellDelegate {
 
     func ChangeImageForm() {
-        print ("please let me make it")
+//        self.presentViewController()
+
     }
     
     func changeBackground() {
@@ -32,8 +33,8 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
         ProfileTable.registerNib(UINib(nibName: "ProfileImageCell", bundle: nil), forCellReuseIdentifier: "ProfileImageCell")
         ProfileTable.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "Profile_Item_ReuseCell")
         
-        ProfileTable.estimatedRowHeight = 60.0
         ProfileTable.rowHeight = UITableViewAutomaticDimension
+        ProfileTable.estimatedRowHeight = 120.0
         
         ProfileTable.delegate = self
         ProfileTable.dataSource = self

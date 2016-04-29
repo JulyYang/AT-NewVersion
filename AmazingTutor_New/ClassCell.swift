@@ -15,9 +15,10 @@ class ClassCell: UITableViewCell {
     @IBOutlet weak var BookedDate: UILabel!
     @IBOutlet weak var BookedTime: UILabel!
     @IBOutlet weak var BookedTeacherName: UILabel!
+  
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.selectionStyle = .None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

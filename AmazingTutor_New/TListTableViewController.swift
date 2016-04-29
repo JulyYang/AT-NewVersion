@@ -69,6 +69,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
 //            (red: 166.0/255.0, green: 33.0/255.0, blue: 37.0/255.0, alpha: 1.0))
         tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
         
+        tableView.reloadData()
         
 //
 //        Alamofire.request(.GET, TInfoURL).responseJSON { (response) in
