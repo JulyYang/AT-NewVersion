@@ -20,17 +20,16 @@ class Classes: UITableViewController {
         ClassTable.estimatedRowHeight = 100.0
         
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
        
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +37,8 @@ class Classes: UITableViewController {
         case 0:
             return 1
         case 1:
+            return 1
+        case 2:
             return 1
         default:
             return 4
@@ -51,9 +52,15 @@ class Classes: UITableViewController {
         switch indexPath.section{
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("ClassStatus", forIndexPath: indexPath)
+            cell.selectionStyle = .None
             return cell
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("ClassNumber", forIndexPath: indexPath)
+            cell.selectionStyle = .None
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCellWithIdentifier("StatusHighlight", forIndexPath: indexPath)
+            cell.selectionStyle = .None
             return cell
         default:
             let cell = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath) as! ClassCell
@@ -69,8 +76,7 @@ class Classes: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let CourseCell = ClassTable.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
+        let _ = ClassTable.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
 //        self.performSegueWithIdentifier("", sender: CourseCell)
     }
 }

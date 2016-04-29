@@ -39,7 +39,6 @@
 		18C468671CC65D6000890A97 /* RatingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468661CC65D6000890A97 /* RatingTable.swift */; };
 		18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */; };
 		18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */; };
-		18E9D7DF1CD2511400A8244D /* TScheduleWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9D7DE1CD2511400A8244D /* TScheduleWeb.swift */; };
 		18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
@@ -84,7 +83,6 @@
 		18C468661CC65D6000890A97 /* RatingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTable.swift; sourceTree = "<group>"; };
 		18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReuseCell.swift; sourceTree = "<group>"; };
 		18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInReuseCell.xib; sourceTree = "<group>"; };
-		18E9D7DE1CD2511400A8244D /* TScheduleWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TScheduleWeb.swift; sourceTree = "<group>"; };
 		18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewController.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */,
 				189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */,
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
-				18E9D7DE1CD2511400A8244D /* TScheduleWeb.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
 				18C07BD21CC612DD007989C5 /* TInfoTableViewCell.swift in Sources */,
 				187262531CC4F076003340D7 /* TListTableViewController.swift in Sources */,
-				18E9D7DF1CD2511400A8244D /* TScheduleWeb.swift in Sources */,
 				18F671281CD3179300E8E422 /* TInfoTableView.swift in Sources */,
 				18F671261CD30CC200E8E422 /* TInfoViewController.swift in Sources */,
 				1894682C1CC868B9003581E9 /* SignInWebPage.swift in Sources */,

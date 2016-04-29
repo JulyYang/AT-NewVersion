@@ -27,7 +27,10 @@ class TInfoViewController: UIViewController, UITableViewDelegate {
 //        TInfoTable.dataSource = self
 //        TInfoTable.delegate = self
         
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.navigationItem.title = "BANANA YELLOW"
+
     }
 
     override func didReceiveMemoryWarning() {
