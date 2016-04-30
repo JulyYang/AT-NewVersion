@@ -35,6 +35,8 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         
         // 註冊nib，讓tableview認識xib檔
         self.TListTable.registerNib(UINib(nibName: "TListCell", bundle: nil), forCellReuseIdentifier: "Tcell")
+        TListTable.rowHeight = UITableViewAutomaticDimension
+        TListTable.estimatedRowHeight = 500.0
         
         // 建立search bar
         self.searchController = UISearchController(searchResultsController: nil)

@@ -11,7 +11,6 @@ import UIKit
 class ProfileTableViewController: UITableViewController, ProfileImageCellDelegate, ProfileCellDelegate {
 
     func ChangeImageForm() {
-//        self.presentViewController()
 
     }
     

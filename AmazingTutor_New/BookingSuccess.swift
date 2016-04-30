@@ -8,17 +8,22 @@
 
 import UIKit
 
+protocol alertSheetDelegate: class {
+    func jumpOut()
+    func fadeOut()
+}
+
 class BookingSuccess: UIView {
+    
+    weak var alertDelegate : alertSheetDelegate?
 
     @IBAction func BookingCheck(sender: AnyObject) {
-        self.removeFromSuperview()
+        alertDelegate?.fadeOut()
+        
     }
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    func jumpOut() {
+        print("hello")
     }
-    */
+
 
 }

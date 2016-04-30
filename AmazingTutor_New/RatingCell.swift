@@ -1,15 +1,16 @@
 //
-//  TInfoTableViewCell.swift
+//  RatingCell.swift
 //  AmazingTutor_New
 //
-//  Created by apple on 2016/4/19.
+//  Created by apple on 2016/4/29.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 import UIKit
 
-class TInfoTableViewCell: UITableViewCell {
+class RatingCell: UITableViewCell {
 
+    @IBOutlet weak var testBT: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +21,5 @@ class TInfoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

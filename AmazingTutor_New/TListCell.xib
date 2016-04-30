@@ -93,7 +93,7 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-gq-9LY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-gq-9LY">
                         <rect key="frame" x="15" y="566.5" width="570" height="18.5"/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,6 +103,7 @@
                 <constraints>
                     <constraint firstItem="Yv1-4O-nlN" firstAttribute="width" secondItem="P00-GJ-Hth" secondAttribute="height" multiplier="3:5" id="02E-RS-p5S"/>
                     <constraint firstItem="FNL-1b-sCd" firstAttribute="leading" secondItem="fkD-Nc-GmC" secondAttribute="trailing" constant="4" id="1s8-jm-j2Y"/>
+                    <constraint firstAttribute="bottom" secondItem="WZS-gq-9LY" secondAttribute="bottom" constant="22.5" id="2rg-5m-6K1"/>
                     <constraint firstAttribute="trailing" secondItem="NCQ-ef-WYg" secondAttribute="trailing" id="5cG-c6-Wmv"/>
                     <constraint firstItem="9eE-qj-rYy" firstAttribute="leading" secondItem="yn7-S6-gKr" secondAttribute="trailing" constant="4" id="69i-QZ-JhP"/>
                     <constraint firstItem="yn7-S6-gKr" firstAttribute="width" secondItem="yn7-S6-gKr" secondAttribute="height" multiplier="1:1" id="6Rw-Co-4is"/>
