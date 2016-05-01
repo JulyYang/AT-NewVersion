@@ -18,12 +18,9 @@ class Classes: UITableViewController {
         ClassTable.registerNib(UINib(nibName: "ClassCell", bundle: nil), forCellReuseIdentifier: "ClassContent")
         ClassTable.rowHeight = UITableViewAutomaticDimension
         ClassTable.estimatedRowHeight = 100.0
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-       
+        navigationSetting()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -33,7 +30,7 @@ class Classes: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
+        switch section{
         case 3:
             return 4 //return data.count
         default:
@@ -42,7 +39,6 @@ class Classes: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         switch indexPath.section{
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("ClassStatus", forIndexPath: indexPath)
@@ -79,11 +75,37 @@ class Classes: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
+        //        dataArray.removeAtIndex(indexPath.row)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        alertDeleteMessege()
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let _ = ClassTable.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
-//        self.performSegueWithIdentifier("", sender: CourseCell)
+        switch indexPath.section{
+        case 3:
+            goToHangoutAlert()
+        default:
+            return
+        }
+    }
+    
+    func alertDeleteMessege(){
+        let ConfirmAlert = UIAlertController(title: "Want to delete this course from your lists?", message: nil , preferredStyle: .Alert)
+        let Confirm = UIAlertAction(title: "Yes, I want to delete it.", style: .Default, handler: nil)
+        let Cancel = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        
+        ConfirmAlert.addAction(Confirm)
+        ConfirmAlert.addAction(Cancel)
+        self.presentViewController(ConfirmAlert, animated: true, completion: nil)
+    }
+    
+    func goToHangoutAlert(){
+        print("hiiiiiiiiiii")
+    }
+    
+    func navigationSetting(){
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
 }
