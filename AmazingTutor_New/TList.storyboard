@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gpv-Ro-XO4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="491"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="497"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TDCell" rowHeight="121" id="QPY-OW-cqg">
@@ -84,11 +84,11 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OB-Fi-9qN">
-                                <rect key="frame" x="0.0" y="491" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="497" width="600" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ia-a5-iI6">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Check the available time">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -121,7 +121,7 @@
                             <constraint firstItem="gpv-Ro-XO4" firstAttribute="height" secondItem="23P-UH-pfL" secondAttribute="height" id="U1F-xV-0Bk"/>
                             <constraint firstItem="Nd7-En-F1P" firstAttribute="top" secondItem="gpv-Ro-XO4" secondAttribute="bottom" id="VNz-X5-d7l"/>
                             <constraint firstItem="gpv-Ro-XO4" firstAttribute="leading" secondItem="23P-UH-pfL" secondAttribute="leading" id="VuU-8b-RLC"/>
-                            <constraint firstItem="3OB-Fi-9qN" firstAttribute="height" secondItem="23P-UH-pfL" secondAttribute="height" multiplier="0.1" id="h1L-43-mfT"/>
+                            <constraint firstItem="3OB-Fi-9qN" firstAttribute="height" secondItem="23P-UH-pfL" secondAttribute="height" multiplier="0.09" id="h1L-43-mfT"/>
                             <constraint firstItem="3OB-Fi-9qN" firstAttribute="top" secondItem="gpv-Ro-XO4" secondAttribute="bottom" id="hJu-8c-mct"/>
                             <constraint firstAttribute="trailing" secondItem="3OB-Fi-9qN" secondAttribute="trailing" id="q8U-9s-WE4"/>
                         </constraints>
@@ -397,15 +397,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PN-zP-HNI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="546"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ju4-Vz-syE">
-                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="546" width="600" height="54"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-EH-FdC">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Book Now">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -423,7 +423,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUe-Lr-hbb">
-                                <rect key="frame" x="551" y="20" width="29" height="29"/>
+                                <rect key="frame" x="20" y="20" width="29" height="29"/>
                                 <state key="normal" image="Cancel Filled-500"/>
                                 <connections>
                                     <action selector="CancelWebView:" destination="0Ol-qI-71h" eventType="touchUpInside" id="GuY-C6-Osg"/>
@@ -433,12 +433,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2PN-zP-HNI" firstAttribute="top" secondItem="syP-Vh-RdI" secondAttribute="bottom" id="8MU-41-o9Q"/>
+                            <constraint firstItem="dUe-Lr-hbb" firstAttribute="leading" secondItem="ort-Su-o5W" secondAttribute="leadingMargin" id="9kp-Li-iRi"/>
                             <constraint firstItem="dUe-Lr-hbb" firstAttribute="top" secondItem="syP-Vh-RdI" secondAttribute="bottom" id="E4Q-kH-KHu"/>
                             <constraint firstItem="dUe-Lr-hbb" firstAttribute="trailing" secondItem="2PN-zP-HNI" secondAttribute="trailing" id="H79-vy-uh6"/>
                             <constraint firstAttribute="trailing" secondItem="Ju4-Vz-syE" secondAttribute="trailing" id="Jfp-GU-WOf"/>
                             <constraint firstItem="2PN-zP-HNI" firstAttribute="top" secondItem="syP-Vh-RdI" secondAttribute="bottom" id="Kp0-CP-XbB"/>
                             <constraint firstItem="rco-U2-owQ" firstAttribute="top" secondItem="Ju4-Vz-syE" secondAttribute="bottom" id="NcS-m5-Xjm"/>
-                            <constraint firstItem="Ju4-Vz-syE" firstAttribute="height" secondItem="ort-Su-o5W" secondAttribute="height" multiplier="0.1" id="O2n-IT-jaC"/>
+                            <constraint firstItem="Ju4-Vz-syE" firstAttribute="height" secondItem="ort-Su-o5W" secondAttribute="height" multiplier="0.09" id="O2n-IT-jaC"/>
+                            <constraint firstItem="dUe-Lr-hbb" firstAttribute="leading" secondItem="ort-Su-o5W" secondAttribute="leading" id="TBO-OV-MuB"/>
                             <constraint firstItem="dUe-Lr-hbb" firstAttribute="top" secondItem="2PN-zP-HNI" secondAttribute="top" id="WdZ-G2-Dv5"/>
                             <constraint firstItem="Ju4-Vz-syE" firstAttribute="leading" secondItem="ort-Su-o5W" secondAttribute="leading" id="Z56-yR-GCd"/>
                             <constraint firstItem="2PN-zP-HNI" firstAttribute="top" secondItem="ort-Su-o5W" secondAttribute="top" id="cON-5o-WK0"/>
@@ -459,11 +461,13 @@
                                 <exclude reference="Kp0-CP-XbB"/>
                                 <exclude reference="i9f-xG-fZk"/>
                                 <exclude reference="tEC-kP-QgW"/>
+                                <exclude reference="H79-vy-uh6"/>
+                                <exclude reference="TBO-OV-MuB"/>
+                                <exclude reference="WdZ-G2-Dv5"/>
+                                <exclude reference="pvn-Zg-ITo"/>
                                 <exclude reference="Jfp-GU-WOf"/>
                                 <exclude reference="mOJ-yJ-cH7"/>
                                 <exclude reference="t9f-dz-IDk"/>
-                                <exclude reference="H79-vy-uh6"/>
-                                <exclude reference="WdZ-G2-Dv5"/>
                                 <exclude reference="fm6-it-H7n"/>
                             </mask>
                         </variation>

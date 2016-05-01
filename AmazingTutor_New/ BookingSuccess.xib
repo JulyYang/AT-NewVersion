@@ -18,7 +18,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC9-W4-5o2">
                             <rect key="frame" x="15" y="15" width="570" height="570"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Success!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-pV-6kl">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Booking Success!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-pV-6kl">
                                     <rect key="frame" x="213" y="274" width="143.5" height="21"/>
                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.91989164089999997" colorSpace="calibratedRGB"/>
@@ -222,7 +222,7 @@
                     <exclude reference="lcO-bK-UFX"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="273" y="222"/>
+            <point key="canvasLocation" x="123" y="72"/>
         </view>
     </objects>
 </document>

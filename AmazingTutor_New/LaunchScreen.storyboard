@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -24,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmazingTutor" translatesAutoresizingMaskIntoConstraints="NO" id="o5y-qs-iZu">
-                                <rect key="frame" x="200" y="125" width="200" height="50"/>
+                                <rect key="frame" x="200" y="95" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5fM-nc-MIK"/>
                                     <constraint firstAttribute="width" constant="200" id="BC1-Rc-V2e"/>
@@ -49,7 +48,7 @@
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="RFX-a2-gdp"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="b0g-y9-AfW"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="eLL-R2-ftN"/>
-                            <constraint firstItem="o5y-qs-iZu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.5" id="gg4-SB-fjn"/>
+                            <constraint firstItem="o5y-qs-iZu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.4" id="gg4-SB-fjn"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kk0-bk-p0X"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="80" id="lIX-ki-dMK"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="wGI-sk-d9X"/>

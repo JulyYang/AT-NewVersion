@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Crashlytics install
         Fabric.with([Crashlytics.self])
         
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "Helvetica", size: 20)!]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
         // Facebook signin
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.fbTokenChangeNoti(_:)), name: FBSDKAccessTokenDidChangeNotification, object: nil)
         print("nm")
