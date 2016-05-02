@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>STZPopupView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39909E713463DE269300B7F74E2620D8</key>
+		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
+		<key>5D3C8EA7E19761201BC146EFFDAAFFAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D25B3C67DFB17B609F75C117155B2B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EC0E58215655E411A9E6D82C296BE6C1</key>
+		<key>7C258E6DBECEB7332FE99F2115C93FD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCA58501CFD2B5003AD02E60E66CE97C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA1F7C2A6CA3793277784A018CD97F8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

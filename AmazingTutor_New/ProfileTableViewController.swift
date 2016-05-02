@@ -65,7 +65,6 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileImageCell", forIndexPath: indexPath) as! ProfileImageCell
             cell.PImageDelegate = self
             cell.UserProfileImage.image = UIImage(named: "beauty")
-//            cell.UserProfileImage.layer.cornerRadius = 60.0
             cell.UserProfileBackground.image = UIImage(named: "paris")
             
             return cell

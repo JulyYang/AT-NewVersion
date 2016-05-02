@@ -184,8 +184,6 @@
 				18ED6E821CD711F100F08A16 /* BookingSuccess.swift */,
 				189468351CC88BB6003581E9 /*  BookingSuccess.xib */,
 				18EE57231CD46400009016F3 /* alertTest.swift */,
-				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
-				18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */,
 			);
 			name = "Teacher List";
 			sourceTree = "<group>";
@@ -208,6 +206,8 @@
 				18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */,
 				189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */,
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
+				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
+				18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

@@ -14,6 +14,7 @@ pod 'Fabric'
 pod 'Crashlytics'
 pod 'YouTubePlayer'
 pod 'DGElasticPullToRefresh'
+pod 'STZPopupView'
 
 
 

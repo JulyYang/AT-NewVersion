@@ -65,6 +65,7 @@
                     <constraint firstItem="Og0-Vn-bWO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JBv-Ya-sSQ"/>
                     <constraint firstItem="BHN-8x-Flc" firstAttribute="leading" secondItem="Og0-Vn-bWO" secondAttribute="trailing" constant="15" id="Jg8-9x-elo"/>
                     <constraint firstItem="Og0-Vn-bWO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="K3D-y8-ZxR"/>
+                    <constraint firstAttribute="bottom" secondItem="Og0-Vn-bWO" secondAttribute="bottom" constant="16.5" id="PUV-SX-cQP"/>
                     <constraint firstItem="17K-7d-mTS" firstAttribute="leading" secondItem="Og0-Vn-bWO" secondAttribute="trailing" constant="15" id="QG3-HT-nhj"/>
                     <constraint firstItem="pdR-Go-sU9" firstAttribute="top" secondItem="izi-Pl-pYN" secondAttribute="bottom" id="Uod-KK-5pr"/>
                     <constraint firstItem="izi-Pl-pYN" firstAttribute="leading" secondItem="Og0-Vn-bWO" secondAttribute="trailing" constant="15" id="Y1x-AI-W2M"/>
@@ -80,6 +81,7 @@
                     <mask key="constraints">
                         <exclude reference="8xn-ig-HEJ"/>
                         <exclude reference="K3D-y8-ZxR"/>
+                        <exclude reference="cO2-M1-MfQ"/>
                         <exclude reference="vHU-Bt-L98"/>
                         <exclude reference="hKI-5B-cq9"/>
                         <exclude reference="a64-6G-MQz"/>

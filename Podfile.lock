@@ -41,6 +41,7 @@ PODS:
   - GoogleSymbolUtilities (1.1.0)
   - GoogleUtilities (1.3.0):
     - GoogleSymbolUtilities (~> 1.0)
+  - STZPopupView (1.0.2)
   - SwiftyJSON (2.3.2)
   - YouTubePlayer (0.3.0)
 
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - FBSDKShareKit
   - Google/SignIn
+  - STZPopupView
   - SwiftyJSON
   - YouTubePlayer
 
@@ -73,6 +75,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: 3d571172b8603be39dcb1705d8217146bb76fe62
   GoogleSymbolUtilities: eb3965ea12710569c7b80db198a39e39b18613f7
   GoogleUtilities: 5c653f7df2eedf0ce0efdfe5afe4f831f375fd7a
+  STZPopupView: 4eb11a72c71d2942e23a4444d1bde40e563702e3
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   YouTubePlayer: 88713a96c356f2c88da8925eb61438eda88bcd57
 

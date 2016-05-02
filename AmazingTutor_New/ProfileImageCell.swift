@@ -41,8 +41,9 @@ class ProfileImageCell: UITableViewCell,UIImagePickerControllerDelegate, UINavig
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .None
-        UserProfileImage.layer.cornerRadius = 60.0
-
+        
+        UserProfileImage.layer.cornerRadius = 75.0
+        UserProfileImage.layer.masksToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
