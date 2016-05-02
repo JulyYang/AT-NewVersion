@@ -75,7 +75,7 @@
                             <color key="thumbTintColor" red="0.92156862745098034" green="0.28235294117647058" blue="0.30196078431372547" alpha="0.87998258513931893" colorSpace="calibratedRGB"/>
                         </slider>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.72382693042813451" blue="0.74228306574923553" alpha="0.2602312306501548" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.98298215482573725" green="0.71242963856061348" blue="0.73390989266080386" alpha="0.23071062306501547" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="TlK-sb-PnW" firstAttribute="leading" secondItem="6aq-Fj-ozQ" secondAttribute="leading" id="6er-9c-0VT"/>
                         <constraint firstAttribute="trailing" secondItem="6aq-Fj-ozQ" secondAttribute="trailing" constant="8" id="B8k-fc-dQv"/>

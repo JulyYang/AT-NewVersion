@@ -33,7 +33,7 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
         ProfileTable.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "Profile_Item_ReuseCell")
         
         ProfileTable.rowHeight = UITableViewAutomaticDimension
-        ProfileTable.estimatedRowHeight = 120.0
+        ProfileTable.estimatedRowHeight = 400.0
         
         ProfileTable.delegate = self
         ProfileTable.dataSource = self
@@ -64,9 +64,9 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileImageCell", forIndexPath: indexPath) as! ProfileImageCell
             cell.PImageDelegate = self
-            cell.UserProfileImage.image = UIImage(named: "Oval 155")
-            cell.UserProfileImage.layer.cornerRadius = 30.0
-            cell.UserProfileBackground.image = UIImage(named: "6")
+            cell.UserProfileImage.image = UIImage(named: "beauty")
+//            cell.UserProfileImage.layer.cornerRadius = 60.0
+            cell.UserProfileBackground.image = UIImage(named: "paris")
             
             return cell
         default:

@@ -15,31 +15,41 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC7-k0-ihS">
-                        <rect key="frame" x="15" y="25" width="44.5" height="30"/>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="25" y="20" width="49" height="30"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                        <color key="textColor" red="0.38431372549999998" green="0.40000000000000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-YA-WVE">
-                        <rect key="frame" x="67.5" y="25" width="303.5" height="30"/>
+                        <rect key="frame" x="89" y="20" width="272" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Y1k-Ep-ukQ"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="ggA-YA-WVE" secondAttribute="trailing" constant="15" id="1X2-0E-w7X"/>
-                    <constraint firstItem="oC7-k0-ihS" firstAttribute="leading" secondItem="UaF-VP-6Lp" secondAttribute="leading" constant="15" id="AWf-Bp-2PQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ggA-YA-WVE" secondAttribute="trailing" constant="25" id="1X2-0E-w7X"/>
+                    <constraint firstItem="oC7-k0-ihS" firstAttribute="leading" secondItem="UaF-VP-6Lp" secondAttribute="leading" constant="25" id="AWf-Bp-2PQ"/>
                     <constraint firstItem="ggA-YA-WVE" firstAttribute="centerY" secondItem="oC7-k0-ihS" secondAttribute="centerY" id="B9N-Vu-Ddi"/>
+                    <constraint firstItem="oC7-k0-ihS" firstAttribute="top" secondItem="UaF-VP-6Lp" secondAttribute="top" constant="20" id="FTX-mV-iV0"/>
                     <constraint firstItem="ggA-YA-WVE" firstAttribute="height" secondItem="oC7-k0-ihS" secondAttribute="height" id="LXZ-Lt-QXZ"/>
                     <constraint firstItem="oC7-k0-ihS" firstAttribute="centerY" secondItem="UaF-VP-6Lp" secondAttribute="centerY" id="aCo-7R-AhV"/>
-                    <constraint firstItem="ggA-YA-WVE" firstAttribute="leading" secondItem="oC7-k0-ihS" secondAttribute="trailing" constant="8" id="hYZ-Sn-x6L"/>
+                    <constraint firstItem="ggA-YA-WVE" firstAttribute="leading" secondItem="oC7-k0-ihS" secondAttribute="trailing" constant="15" id="hYZ-Sn-x6L"/>
+                    <constraint firstAttribute="bottom" secondItem="oC7-k0-ihS" secondAttribute="bottom" constant="20" id="v5k-Zx-HVv"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="aCo-7R-AhV"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="ProfileItem" destination="oC7-k0-ihS" id="tf8-rJ-com"/>
                 <outlet property="UserTextField" destination="ggA-YA-WVE" id="bIZ-Sa-105"/>
             </connections>
-            <point key="canvasLocation" x="457" y="143.5"/>
+            <point key="canvasLocation" x="459" y="120.5"/>
         </tableViewCell>
     </objects>
 </document>

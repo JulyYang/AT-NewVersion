@@ -2,7 +2,7 @@
 //  BookingSuccess.swift
 //  AmazingTutor_New
 //
-//  Created by apple on 2016/4/21.
+//  Created by apple on 2016/5/2.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
@@ -16,14 +16,18 @@ protocol alertSheetDelegate: class {
 class BookingSuccess: UIView {
     
     weak var alertDelegate : alertSheetDelegate?
-
+    
     @IBAction func BookingCheck(sender: AnyObject) {
         alertDelegate?.fadeOut()
         
     }
+    
+    
     func jumpOut() {
         print("hello")
     }
-
-
+    
+    
 }
+
+

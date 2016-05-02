@@ -18,7 +18,6 @@
 		1894682C1CC868B9003581E9 /* SignInWebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894682B1CC868B9003581E9 /* SignInWebPage.swift */; };
 		1894682E1CC88039003581E9 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894682D1CC88039003581E9 /* BaseURL.swift */; };
 		189468361CC88BB6003581E9 /*  BookingSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189468351CC88BB6003581E9 /*  BookingSuccess.xib */; };
-		1894683A1CC88F81003581E9 /* BookingSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189468391CC88F81003581E9 /* BookingSuccess.swift */; };
 		189EB2E11CCDB1EE00F6D758 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */; };
 		189EB2E21CCDB1EE00F6D758 /* ClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */; };
 		189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */; };
@@ -41,6 +40,9 @@
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		18ED6E591CD6EC7300F08A16 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED6E581CD6EC7300F08A16 /* SearchView.swift */; };
 		18ED6E5B1CD6EC8600F08A16 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED6E5A1CD6EC8600F08A16 /* SearchView.xib */; };
+		18ED6E7F1CD710FA00F08A16 /* HangoutAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */; };
+		18ED6E831CD711F100F08A16 /* BookingSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED6E821CD711F100F08A16 /* BookingSuccess.swift */; };
+		18ED6E851CD712C300F08A16 /* HangoutAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED6E841CD712C300F08A16 /* HangoutAlert.swift */; };
 		18EE57241CD46400009016F3 /* alertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE57231CD46400009016F3 /* alertTest.swift */; };
 		18F150E31CD3A1340044987A /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F150E21CD3A1340044987A /* RatingCell.swift */; };
 		18F2DBEF1CD49FBC00B24762 /* CalenderWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2DBEE1CD49FBC00B24762 /* CalenderWeb.swift */; };
@@ -63,7 +65,6 @@
 		1894682B1CC868B9003581E9 /* SignInWebPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWebPage.swift; sourceTree = "<group>"; };
 		1894682D1CC88039003581E9 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		189468351CC88BB6003581E9 /*  BookingSuccess.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = " BookingSuccess.xib"; sourceTree = "<group>"; };
-		189468391CC88F81003581E9 /* BookingSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingSuccess.swift; sourceTree = "<group>"; };
 		189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassCell.xib; sourceTree = "<group>"; };
 		189EB2E41CCE2CE200F6D758 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,9 @@
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		18ED6E581CD6EC7300F08A16 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		18ED6E5A1CD6EC8600F08A16 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HangoutAlert.xib; sourceTree = "<group>"; };
+		18ED6E821CD711F100F08A16 /* BookingSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingSuccess.swift; sourceTree = "<group>"; };
+		18ED6E841CD712C300F08A16 /* HangoutAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangoutAlert.swift; sourceTree = "<group>"; };
 		18EE57231CD46400009016F3 /* alertTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertTest.swift; sourceTree = "<group>"; };
 		18F150E21CD3A1340044987A /* RatingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
 		18F2DBEE1CD49FBC00B24762 /* CalenderWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderWeb.swift; sourceTree = "<group>"; };
@@ -173,13 +177,15 @@
 			children = (
 				187262521CC4F076003340D7 /* TListTableViewController.swift */,
 				18ED6E5A1CD6EC8600F08A16 /* SearchView.xib */,
+				18ED6E581CD6EC7300F08A16 /* SearchView.swift */,
 				18C07BD61CC637BF007989C5 /* TListCell.xib */,
 				18E9DDF41CC473B3000896EC /* TListCell.swift */,
 				1894682D1CC88039003581E9 /* BaseURL.swift */,
-				189468391CC88F81003581E9 /* BookingSuccess.swift */,
+				18ED6E821CD711F100F08A16 /* BookingSuccess.swift */,
 				189468351CC88BB6003581E9 /*  BookingSuccess.xib */,
 				18EE57231CD46400009016F3 /* alertTest.swift */,
-				18ED6E581CD6EC7300F08A16 /* SearchView.swift */,
+				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
+				18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */,
 			);
 			name = "Teacher List";
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 				18C07BD71CC637BF007989C5 /* TListCell.xib in Resources */,
 				18ED6E5B1CD6EC8600F08A16 /* SearchView.xib in Resources */,
 				189468361CC88BB6003581E9 /*  BookingSuccess.xib in Resources */,
+				18ED6E7F1CD710FA00F08A16 /* HangoutAlert.xib in Resources */,
 				18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */,
 				189EB2E71CCE2F6E00F6D758 /* ProfileImageCell.xib in Resources */,
 				18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */,
@@ -406,15 +413,16 @@
 				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
 				18ED6E591CD6EC7300F08A16 /* SearchView.swift in Sources */,
 				1894682E1CC88039003581E9 /* BaseURL.swift in Sources */,
+				18ED6E851CD712C300F08A16 /* HangoutAlert.swift in Sources */,
 				18F2DBEF1CD49FBC00B24762 /* CalenderWeb.swift in Sources */,
 				1832596D1CD075B0008FD1CD /* PropertySetting.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
+				18ED6E831CD711F100F08A16 /* BookingSuccess.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
 				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
 				18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */,
 				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
-				1894683A1CC88F81003581E9 /* BookingSuccess.swift in Sources */,
 				18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
 				18F150E31CD3A1340044987A /* RatingCell.swift in Sources */,

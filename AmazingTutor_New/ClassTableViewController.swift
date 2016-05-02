@@ -8,7 +8,18 @@
 
 import UIKit
 
-class Classes: UITableViewController {
+class Classes: UITableViewController, goToHangoutAlertDelegate {
+    
+    func goHangout() {
+//        let alert = HangoutAlert()
+//        alert.HangoutBtWebvVew
+//        let Hangurl = NSURL(string: "http://plok740122.com/hangout.html")
+//        let request = NSURLRequest(URL: Hangurl!)
+//        webview?.loadRequest(request)
+        
+        print("jjjjjjj")
+    }
+    
     
     @IBOutlet weak var ClassTable: UITableView!
     
