@@ -65,7 +65,7 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileImageCell", forIndexPath: indexPath) as! ProfileImageCell
             cell.PImageDelegate = self
             cell.UserProfileImage.image = UIImage(named: "beauty")
-            cell.UserProfileBackground.image = UIImage(named: "paris")
+            cell.UserProfileBackground.image = UIImage(named: "sea")
             
             return cell
         default:

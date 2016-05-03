@@ -7,20 +7,10 @@
 //
 
 import UIKit
+import STZPopupView
 
 class Classes: UITableViewController, goToHangoutAlertDelegate {
-    
-    func goHangout() {
-//        let alert = HangoutAlert()
-//        alert.HangoutBtWebvVew
-//        let Hangurl = NSURL(string: "http://plok740122.com/hangout.html")
-//        let request = NSURLRequest(URL: Hangurl!)
-//        webview?.loadRequest(request)
-        
-        print("jjjjjjj")
-    }
-    
-    
+
     @IBOutlet weak var ClassTable: UITableView!
     
     override func viewDidLoad() {
@@ -112,7 +102,12 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
     }
     
     func goToHangoutAlert(){
-        print("hiiiiiiiiiii")
+        let TestView = HangoutAlert.instanceFromNib()
+        
+//        TestView.c
+
+        presentPopupView(TestView)
+        print("jjjjjjj")
     }
     
     func navigationSetting(){
