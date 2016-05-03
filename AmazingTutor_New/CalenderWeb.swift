@@ -9,10 +9,20 @@
 import UIKit
 import STZPopupView
 
-class CalenderWeb: UIViewController {
-//, alertSheetDelegate{
-
+class CalenderWeb: UIViewController, alertSheetDelegate{
+    
     let BookingAlertView = BookingSuccess.instanceFromNib()
+    //    BookingAlertView.
+    
+    func bookingConfirm(){
+        presentPopupView(BookingAlertView)
+    }
+    
+    func fadeOut(){
+//        dismissPopupView()
+    }
+    
+    
     @IBOutlet weak var CalenderWebView: UIWebView!
     @IBAction func BooknowButton(sender: AnyObject) {
         bookingConfirm()
@@ -20,13 +30,12 @@ class CalenderWeb: UIViewController {
     @IBAction func CancelWebView(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
     override func viewWillAppear(animated: Bool) {
         self.tabBarController?.tabBar.hidden = true
         let SignInurl = NSURL(string: "http://www.books.com.tw/")
         let request = NSURLRequest(URL: SignInurl!)
         CalenderWebView.loadRequest(request)
-        
-//        BookingAlertView.delegate = self
     }
 
     override func viewDidLoad() {
@@ -35,20 +44,10 @@ class CalenderWeb: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillDisappear(animated: Bool) {
         self.tabBarController?.tabBar.hidden = false
     }
-    
-    func bookingConfirm(){
-        presentPopupView(BookingAlertView)
-    }
-//    
-//    func fadeOut(){
-//        dismissPopupView()
-//        print("fromWeb")
-//    }
     
 }

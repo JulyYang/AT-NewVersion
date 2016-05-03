@@ -9,23 +9,22 @@
 import UIKit
 
 protocol alertSheetDelegate: class {
-    func jumpOut()
     func fadeOut()
 }
 
 class BookingSuccess: UIView {
     weak var alertDelegate : alertSheetDelegate?
+
     
     @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var AmazingTitle: UILabel!
     @IBOutlet weak var TutorTitle: UILabel!
     @IBOutlet weak var SubTitle: UILabel!
     @IBAction func BookingCheck(sender: AnyObject) {
-//        self.removeFromSuperview()
-    }
-    
-    func jumpOut() {
-        print("hello")
+//        let DesinationStoryboard = UIStoryboard(name: "", bundle: nil)
+//        let RootController = RootStoryboard.instantiateViewControllerWithIdentifier("MainTabBarController")
+//        self.window!.rootViewController = RootControllerself.removeFromSuperview()
+        
     }
     
     class func instanceFromNib() -> UIView {

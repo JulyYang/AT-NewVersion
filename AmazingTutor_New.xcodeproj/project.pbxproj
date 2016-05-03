@@ -36,7 +36,6 @@
 		18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */; };
 		18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */; };
 		18E8A6DD1CD8D44B00AA78B8 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */; };
-		18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		18ED6E591CD6EC7300F08A16 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED6E581CD6EC7300F08A16 /* SearchView.swift */; };
@@ -83,7 +82,6 @@
 		18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReuseCell.swift; sourceTree = "<group>"; };
 		18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInReuseCell.xib; sourceTree = "<group>"; };
 		18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
-		18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewController.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		18ED6E581CD6EC7300F08A16 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 		189EB2DE1CCDB07800F6D758 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18E9DB9E1CD069EC00D5536B /* ClassTableViewController.swift */,
 				189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */,
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
 				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
@@ -421,7 +418,6 @@
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
 				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
-				18E9DB9F1CD069EC00D5536B /* ClassTableViewController.swift in Sources */,
 				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
 				18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,

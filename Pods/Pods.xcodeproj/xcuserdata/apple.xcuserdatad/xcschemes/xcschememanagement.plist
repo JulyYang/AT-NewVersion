@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>APESuperHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,12 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D3C8EA7E19761201BC146EFFDAAFFAE</key>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
+		<key>61F128212A825EA3A517095080664031</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C258E6DBECEB7332FE99F2115C93FD9</key>
+		<key>90CEE3C8E975FCF43C86533831A227CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCA58501CFD2B5003AD02E60E66CE97C</key>
+		<key>A6AB6D9BF3836F982E4CC4E1DA077952</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA1F7C2A6CA3793277784A018CD97F8B</key>
+		<key>C613182083E4F0540EE3B6A2DD9F888C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB056F002F1C2C5884552F7D75C9D4F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

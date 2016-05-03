@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.3.1)
+  - APESuperHUD (0.5.2)
   - Bolts (1.7.0):
     - Bolts/AppLinks (= 1.7.0)
     - Bolts/Tasks (= 1.7.0)
@@ -47,6 +48,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - APESuperHUD
   - Crashlytics
   - DGElasticPullToRefresh
   - Fabric
@@ -60,6 +62,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  APESuperHUD: 51f70751841be31d6124fbcfde9d6eab322d16dc
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   DGElasticPullToRefresh: 040f39ae69840b3261d163fe6735c5901bf851e9

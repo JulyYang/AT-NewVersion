@@ -15,6 +15,8 @@ pod 'Crashlytics'
 pod 'YouTubePlayer'
 pod 'DGElasticPullToRefresh'
 pod 'STZPopupView'
+pod 'APESuperHUD'
+
 
 
 
