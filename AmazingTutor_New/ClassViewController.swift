@@ -9,8 +9,9 @@
 import UIKit
 import STZPopupView
 
-class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAlertDelegate {
-
+class ClassViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
+    //, goToHangoutAlertDelegate {
+    
     @IBOutlet weak var HeaderView: UIView!
     @IBOutlet weak var ClassTable: UITableView!
     
@@ -20,61 +21,40 @@ class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAle
         ClassTable.registerNib(UINib(nibName: "ClassCell", bundle: nil), forCellReuseIdentifier: "ClassContent")
         ClassTable.rowHeight = UITableViewAutomaticDimension
         ClassTable.estimatedRowHeight = 100.0
+        
+        ClassTable.dataSource = self
+        ClassTable.delegate = self
+        
         navigationSetting()
-
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 4
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section{
-        case 3:
-            return 4 //return data.count
-        default:
-            return 1
-        }
+        return 4 //return data.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        switch indexPath.section{
-        case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ClassStatus", forIndexPath: indexPath)
-            cell.selectionStyle = .None
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ClassNumber", forIndexPath: indexPath)
-            cell.selectionStyle = .None
-            return cell
-        case 2:
-            let cell = tableView.dequeueReusableCellWithIdentifier("StatusHighlight", forIndexPath: indexPath)
-            cell.selectionStyle = .None
-            return cell
-        default:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath) as! ClassCell
-            cell.BookedTeacherImage.image = UIImage(named: "Bob_minions_hands")
-            cell.BookedTeacherImage.layer.cornerRadius = 60.0
-            cell.BookedCourseTitle.text = "Banana Song"
-            cell.BookedDate.text = "May, 1st, 2016"
-            cell.BookedTime.text = "9:00 AM"
-            cell.BookedTeacherName.text = "BANANA YELLOW"
-            
-            return cell
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath) as! ClassCell
+        cell.BookedTeacherImage.image = UIImage(named: "Bob_minions_hands")
+        cell.BookedTeacherImage.layer.cornerRadius = 60.0
+        cell.BookedCourseTitle.text = "Banana Song"
+        cell.BookedDate.text = "May, 1st, 2016"
+        cell.BookedTime.text = "9:00 AM"
+        cell.BookedTeacherName.text = "BANANA YELLOW"
+        
+        return cell
     }
     
+    
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        switch indexPath.section{
-        case 3:
-            return true
-        default:
-            return false
-        }
+        return true
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -84,13 +64,8 @@ class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAle
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let _ = ClassTable.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
-        switch indexPath.section{
-        case 3:
-            goToHangoutAlert()
-        default:
-            return
-        }
+        let _ = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
+        goToHangoutAlert()
     }
     
     func alertDeleteMessege(){
@@ -108,7 +83,6 @@ class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAle
         print(HangoutView.frame)
         let popupConfig = STZPopupViewConfig()
         popupConfig.dismissTouchBackground = true
-        //        popupConfig.cornerRadius = 20.0
         
         presentPopupView(HangoutView, config: popupConfig)
         print(HangoutView.frame)
@@ -118,5 +92,4 @@ class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAle
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
-
 }
