@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import DGElasticPullToRefresh
+import STZPopupView
 
 var TListArray = [Teacher]()
 var ArrayNumber: Int?
@@ -55,13 +56,19 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         
     }
     
-//    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-//        <#code#>
-//    }
     func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let SearchAlert = SearchView.instanceFromNib()
+        SearchAlert.frame = CGRectMake(0, 0, self.view.bounds.width, (self.view.bounds.height)*0.4)
+        self.view.addSubview(SearchAlert)
+//      presentPopupView(SearchAlert)
+        
+//      self.searchController.active = false 害我當機嗚嗚嗚
         print("hello")
     }
-
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -84,7 +91,6 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         
         let row = indexPath.row
         print("\(row)")
-        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -112,7 +118,6 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     }
     
     
-    
     // 讓search bar顯示在navigation bar之上，並改變navigationbar的顏色
     func navigationSetting() {
         self.navigationItem.titleView = searchController.searchBar
@@ -133,6 +138,8 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.dimsBackgroundDuringPresentation = true
+
+//        disablesAutomaticKeyboardDismissal()
     
     }
     
@@ -186,6 +193,5 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         //
         //        }
     }
-    
     
 }

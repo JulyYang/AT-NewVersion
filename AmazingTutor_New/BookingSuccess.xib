@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingSuccess" customModule="AmazingTutor_New" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mAa-js-FT6" customClass="BookingSuccess" customModule="AmazingTutor_New" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-v2-Ygy">
+                    <rect key="frame" x="10" y="10" width="280" height="280"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Oe-EG-R4a">
+                            <rect key="frame" x="27" y="76" width="142" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="hmC-rr-zP1"/>
+                                <constraint firstAttribute="height" constant="49" id="zLr-Gg-B40"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="35"/>
+                            <color key="textColor" red="0.98039215690000003" green="0.33333333329999998" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="hmC-rr-zP1"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="hmC-rr-zP1"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="JQZ-52-nPJ">
+                            <rect key="frame" x="169" y="76" width="87" height="49"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="35"/>
+                            <color key="textColor" red="1" green="0.66666666669999997" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Success!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUj-WP-ra3">
+                            <rect key="frame" x="60" y="129" width="159" height="23"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.91989164089999997" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-Th-mqc">
+                            <rect key="frame" x="71" y="193" width="138" height="33"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.32156862749999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5h1-Th-mqc" secondAttribute="height" multiplier="171:35" id="5HB-Bo-dSo"/>
+                                <constraint firstAttribute="width" constant="112" id="Tr3-3n-lhG"/>
+                                <constraint firstAttribute="height" constant="33" id="VJF-TY-eMW"/>
+                                <constraint firstAttribute="width" constant="138" id="sH4-am-3S9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="5HB-Bo-dSo"/>
+                                    <exclude reference="Tr3-3n-lhG"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="5HB-Bo-dSo"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="BookingCheck:" destination="-1" eventType="touchUpInside" id="bTr-Zd-Ufd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="6Oe-EG-R4a" firstAttribute="baseline" secondItem="JQZ-52-nPJ" secondAttribute="baseline" id="D4G-br-ghc"/>
+                        <constraint firstItem="JQZ-52-nPJ" firstAttribute="height" secondItem="6Oe-EG-R4a" secondAttribute="height" id="EYG-R3-nNa"/>
+                        <constraint firstItem="JQZ-52-nPJ" firstAttribute="leading" secondItem="6Oe-EG-R4a" secondAttribute="trailing" id="Hry-SA-MRA"/>
+                        <constraint firstItem="JQZ-52-nPJ" firstAttribute="leading" secondItem="6Oe-EG-R4a" secondAttribute="trailing" constant="27" id="ONc-ph-TuM"/>
+                        <constraint firstItem="JQZ-52-nPJ" firstAttribute="centerY" secondItem="6Oe-EG-R4a" secondAttribute="centerY" id="Qze-G6-fCD"/>
+                        <constraint firstItem="6Oe-EG-R4a" firstAttribute="centerX" secondItem="gT4-v2-Ygy" secondAttribute="centerX" multiplier="0.7" id="SzY-RL-oOk"/>
+                        <constraint firstItem="aUj-WP-ra3" firstAttribute="centerY" secondItem="gT4-v2-Ygy" secondAttribute="centerY" id="WLz-IH-Roa"/>
+                        <constraint firstItem="6Oe-EG-R4a" firstAttribute="leading" secondItem="gT4-v2-Ygy" secondAttribute="leading" constant="27" id="XZ2-hm-EKd"/>
+                        <constraint firstItem="5h1-Th-mqc" firstAttribute="centerY" secondItem="gT4-v2-Ygy" secondAttribute="centerY" multiplier="1.5" id="aRQ-aP-2cb"/>
+                        <constraint firstAttribute="width" secondItem="gT4-v2-Ygy" secondAttribute="height" multiplier="1:1" id="gdt-X5-uRi"/>
+                        <constraint firstItem="6Oe-EG-R4a" firstAttribute="centerY" secondItem="gT4-v2-Ygy" secondAttribute="centerY" multiplier="0.72" id="ieb-ck-I7H"/>
+                        <constraint firstItem="5h1-Th-mqc" firstAttribute="centerX" secondItem="gT4-v2-Ygy" secondAttribute="centerX" id="kQj-x7-4w4"/>
+                        <constraint firstAttribute="width" secondItem="gT4-v2-Ygy" secondAttribute="height" multiplier="1:1" id="ks2-J0-LOS"/>
+                        <constraint firstItem="aUj-WP-ra3" firstAttribute="centerX" secondItem="gT4-v2-Ygy" secondAttribute="centerX" id="tpp-L7-l4T"/>
+                        <constraint firstAttribute="width" constant="280" id="yk1-Dt-Dop"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="gdt-X5-uRi"/>
+                            <exclude reference="D4G-br-ghc"/>
+                            <exclude reference="ONc-ph-TuM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="ks2-J0-LOS"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.66666666669999997" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gT4-v2-Ygy" firstAttribute="leading" secondItem="mAa-js-FT6" secondAttribute="leading" constant="10" id="0PH-c5-0Nw"/>
+                <constraint firstAttribute="trailing" secondItem="gT4-v2-Ygy" secondAttribute="trailing" constant="10" id="AeS-X5-4Sr"/>
+                <constraint firstItem="gT4-v2-Ygy" firstAttribute="top" secondItem="mAa-js-FT6" secondAttribute="top" constant="10" id="KNG-Or-FtU"/>
+                <constraint firstAttribute="bottom" secondItem="gT4-v2-Ygy" secondAttribute="bottom" constant="10" id="LdD-qW-ZVk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="AmazingTitle" destination="aUj-WP-ra3" id="DHU-kk-95z"/>
+                <outlet property="BaseView" destination="gT4-v2-Ygy" id="ruZ-zq-UgX"/>
+                <outlet property="SubTitle" destination="6Oe-EG-R4a" id="icy-sQ-zea"/>
+                <outlet property="TutorTitle" destination="JQZ-52-nPJ" id="ziZ-2b-BId"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="243"/>
+        </view>
+    </objects>
+</document>

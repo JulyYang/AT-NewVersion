@@ -24,6 +24,9 @@ extension UIViewController {
     private var targetView: UIView {
         var viewController = self
         while let parentViewController = viewController.parentViewController {
+            if parentViewController.isKindOfClass(UITableViewController) {
+                print("hi")
+            }
             viewController = parentViewController
         }
         return viewController.view

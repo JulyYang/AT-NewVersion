@@ -18,12 +18,11 @@ class SearchView: UIView {
     @IBOutlet weak var PriceSlider: UISlider!
     
     @IBAction func SendToSearchBar(sender: AnyObject) {
+        self.removeFromSuperview()
     }
     
-    
-    
-    
-    
-    
+    class func instanceFromNib() -> UIView {
+        return UINib(nibName: "SearchView", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
+    }
     
 }

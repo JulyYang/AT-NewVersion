@@ -7,27 +7,30 @@
 //
 
 import UIKit
+import STZPopupView
 
 class CalenderWeb: UIViewController {
-    
+//, alertSheetDelegate{
+
+    let BookingAlertView = BookingSuccess.instanceFromNib()
     @IBOutlet weak var CalenderWebView: UIWebView!
-    
+    @IBAction func BooknowButton(sender: AnyObject) {
+        bookingConfirm()
+    }
     @IBAction func CancelWebView(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     override func viewWillAppear(animated: Bool) {
         self.tabBarController?.tabBar.hidden = true
         let SignInurl = NSURL(string: "http://www.books.com.tw/")
         let request = NSURLRequest(URL: SignInurl!)
         CalenderWebView.loadRequest(request)
+        
+//        BookingAlertView.delegate = self
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let SignInurl = NSURL(string: "http://www.books.com.tw/")
-//        let request = NSURLRequest(URL: SignInurl!)
-//        CalenderWebView.loadRequest(request)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +40,15 @@ class CalenderWeb: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         self.tabBarController?.tabBar.hidden = false
-        
     }
-
+    
+    func bookingConfirm(){
+        presentPopupView(BookingAlertView)
+    }
+//    
+//    func fadeOut(){
+//        dismissPopupView()
+//        print("fromWeb")
+//    }
+    
 }

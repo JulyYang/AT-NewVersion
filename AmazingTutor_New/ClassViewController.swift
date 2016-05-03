@@ -1,16 +1,17 @@
 //
-//  ClassTableViewController.swift
+//  ClassViewController.swift
 //  AmazingTutor_New
 //
-//  Created by apple on 2016/4/27.
+//  Created by apple on 2016/5/3.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 import UIKit
 import STZPopupView
 
-class Classes: UITableViewController, goToHangoutAlertDelegate {
+class ClassViewController: UIViewController, UITableViewDelegate, goToHangoutAlertDelegate {
 
+    @IBOutlet weak var HeaderView: UIView!
     @IBOutlet weak var ClassTable: UITableView!
     
     override func viewDidLoad() {
@@ -20,17 +21,18 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         ClassTable.rowHeight = UITableViewAutomaticDimension
         ClassTable.estimatedRowHeight = 100.0
         navigationSetting()
+
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 4
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section{
         case 3:
             return 4 //return data.count
@@ -39,7 +41,7 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.section{
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("ClassStatus", forIndexPath: indexPath)
@@ -66,7 +68,7 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         }
     }
     
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         switch indexPath.section{
         case 3:
             return true
@@ -75,13 +77,13 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         }
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         //        dataArray.removeAtIndex(indexPath.row)
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         alertDeleteMessege()
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let _ = ClassTable.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
         switch indexPath.section{
         case 3:
@@ -106,8 +108,8 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         print(HangoutView.frame)
         let popupConfig = STZPopupViewConfig()
         popupConfig.dismissTouchBackground = true
-//        popupConfig.cornerRadius = 20.0
-
+        //        popupConfig.cornerRadius = 20.0
+        
         presentPopupView(HangoutView, config: popupConfig)
         print(HangoutView.frame)
     }
@@ -116,4 +118,5 @@ class Classes: UITableViewController, goToHangoutAlertDelegate {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
+
 }

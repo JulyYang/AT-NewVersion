@@ -8,17 +8,6 @@
 
 import UIKit
 
-//protocol UIViewLoading {}
-//extension UIView : UIViewLoading {}
-//
-//extension UIViewLoading where Self : UIView {
-//    
-//    static func loadFromNib() -> Self {
-//        let nibName = "\(self)".characters.split{$0 == "."}.map(String.init).last!
-//        let nib = UINib(nibName: nibName, bundle: nil)
-//        return nib.instantiateWithOwner(self, options: nil).first as! Self
-//    }
-//}
 protocol goToHangoutAlertDelegate: class {
     func goToHangoutAlert()
 }
@@ -27,7 +16,6 @@ class HangoutAlert: UIView {
     
     weak var HAlert: goToHangoutAlertDelegate?
     
-    @IBOutlet weak var BackgroundView: UIView!
     @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var AmazingTitle: UILabel!
     @IBOutlet weak var TutorTitle: UILabel!
