@@ -124,7 +124,7 @@
                 <outlet property="SearchTitle1" destination="pwN-kb-xdJ" id="rtS-LH-JRo"/>
                 <outlet property="SearchTitle2" destination="TlK-sb-PnW" id="2rv-te-HS9"/>
             </connections>
-            <point key="canvasLocation" x="348" y="204"/>
+            <point key="canvasLocation" x="319" y="195"/>
         </view>
     </objects>
 </document>

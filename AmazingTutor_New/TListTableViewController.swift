@@ -19,7 +19,6 @@ var ArrayNumber: Int?
 class TListTableViewController: UITableViewController, UISearchControllerDelegate, UISearchResultsUpdating,UISearchBarDelegate {
     
     @IBOutlet weak var TListTable: UITableView!
-    
     var searchController: UISearchController!
     
     override func viewDidLoad() {
@@ -33,27 +32,12 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         TListTable.rowHeight = UITableViewAutomaticDimension
         TListTable.estimatedRowHeight = 500.0
         
-        searchbarSetting()
-        navigationSetting()
-        
         self.definesPresentationContext = true
         
+        searchbarSetting()
+        navigationSetting()
         tableviewHeaderBuilding()
-        
-//        頁面下拉更新效果
-//        Initialize tableView
-        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
-        loadingView.tintColor = UIColor(red: 74.0/255.0, green: 74.0/255.0, blue: 74.0/255.0, alpha: 0.6)
-        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
-            // Add your logic here
-            // Do not forget to call dg_stopLoading() at the end
-            self?.tableView.dg_stopLoading()
-            }, loadingView: loadingView)
-        tableView.dg_setPullToRefreshFillColor(UIColor.whiteColor())
-        tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
-        
-        tableView.reloadData()
-        
+        updatePage()
     }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
@@ -83,7 +67,6 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
         let TeacherCell = TListTable.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath)
         self.performSegueWithIdentifier("ShowTDetail", sender: TeacherCell)
 //        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
@@ -162,6 +145,22 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         TeacherWallHeaderView.addSubview(TitleLabel)
         TeacherWallHeaderView.addSubview(SubLabel)
         self.TListTable.tableHeaderView = TeacherWallHeaderView
+    }
+    
+    func updatePage(){
+        //        頁面下拉更新效果
+        //        Initialize tableView
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 74.0/255.0, green: 74.0/255.0, blue: 74.0/255.0, alpha: 0.6)
+        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            // Do not forget to call dg_stopLoading() at the end
+            self?.tableView.dg_stopLoading()
+            }, loadingView: loadingView)
+        tableView.dg_setPullToRefreshFillColor(UIColor.whiteColor())
+        tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
+        
+        tableView.reloadData()
     }
     
     

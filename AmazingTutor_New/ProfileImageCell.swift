@@ -9,33 +9,26 @@
 import UIKit
 
 protocol ProfileImageCellDelegate: class {
-    func ChangeImageForm()
-    func changeBackground()
+    func userImageAlert()
+    func backgroundImageAlert()
 }
 
 class ProfileImageCell: UITableViewCell,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     weak var PImageDelegate: ProfileImageCellDelegate?
+    
     let UserImagePicker = UIImagePickerController()
 
     @IBOutlet weak var UserProfileImage: UIImageView!
     @IBOutlet weak var UserProfileBackground: UIImageView!
     
     @IBAction func ChangeImage(sender: AnyObject) {
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
-            UserImagePicker.delegate = self
-            UserImagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-            UserImagePicker.allowsEditing = true
-        }
-        PImageDelegate?.ChangeImageForm()
-
+        PImageDelegate?.userImageAlert()
     }
     
     @IBAction func ChangeBackground(sender: AnyObject) {
-        PImageDelegate?.changeBackground()
+        PImageDelegate?.backgroundImageAlert()
         print("background")
-        
     }
     
     override func awakeFromNib() {
