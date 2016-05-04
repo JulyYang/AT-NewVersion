@@ -19,6 +19,7 @@ class ProfileImageCell: UITableViewCell,UIImagePickerControllerDelegate, UINavig
     
     let UserImagePicker = UIImagePickerController()
 
+    @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var UserProfileImage: UIImageView!
     @IBOutlet weak var UserProfileBackground: UIImageView!
     
@@ -34,6 +35,8 @@ class ProfileImageCell: UITableViewCell,UIImagePickerControllerDelegate, UINavig
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .None
+        BaseView.layer.cornerRadius = 78.0
+        BaseView.layer.masksToBounds = true
         UserProfileImage.layer.cornerRadius = 75.0
         UserProfileImage.layer.masksToBounds = true
     }

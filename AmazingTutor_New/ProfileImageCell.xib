@@ -33,46 +33,60 @@
                             <action selector="ChangeBackground:" destination="FZW-xV-CAa" eventType="touchUpInside" id="YAT-nG-tAg"/>
                         </connections>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="njn-gD-bLd">
-                        <rect key="frame" x="143" y="48" width="150" height="150"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-Rh-B4d">
+                        <rect key="frame" x="140" y="72" width="155" height="155"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_black" translatesAutoresizingMaskIntoConstraints="NO" id="njn-gD-bLd">
+                                <rect key="frame" x="2" y="2" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="GxT-RT-ttw"/>
+                                    <constraint firstAttribute="width" secondItem="njn-gD-bLd" secondAttribute="height" multiplier="1:1" id="dgX-0W-php"/>
+                                    <constraint firstAttribute="width" constant="150" id="i3d-cB-BkW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i3d-cB-BkW"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="150" id="GxT-RT-ttw"/>
-                            <constraint firstAttribute="width" secondItem="njn-gD-bLd" secondAttribute="height" multiplier="1:1" id="dgX-0W-php"/>
-                            <constraint firstAttribute="width" constant="150" id="i3d-cB-BkW"/>
+                            <constraint firstAttribute="height" constant="155" id="Q7c-wg-nWQ"/>
+                            <constraint firstAttribute="width" secondItem="xRE-Rh-B4d" secondAttribute="height" id="a9N-zP-EOs"/>
+                            <constraint firstItem="njn-gD-bLd" firstAttribute="centerY" secondItem="xRE-Rh-B4d" secondAttribute="centerY" id="bQd-YW-Lwh"/>
+                            <constraint firstItem="njn-gD-bLd" firstAttribute="centerX" secondItem="xRE-Rh-B4d" secondAttribute="centerX" id="q57-SB-jb8"/>
                         </constraints>
-                    </imageView>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-a1-DBL">
-                        <rect key="frame" x="263" y="168" width="30" height="30"/>
+                        <rect key="frame" x="265" y="197" width="30" height="30"/>
                         <state key="normal" image="add"/>
                         <connections>
                             <action selector="ChangeImage:" destination="FZW-xV-CAa" eventType="touchUpInside" id="1Ee-2S-WjS"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-7F-TAk">
-                        <rect key="frame" x="167.5" y="206" width="101.5" height="23"/>
+                        <rect key="frame" x="167" y="235" width="101.5" height="23"/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                        <color key="textColor" red="0.14741119302949057" green="0.14741119302949057" blue="0.14741119302949057" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="b1d-7F-TAk" firstAttribute="centerX" secondItem="xRE-Rh-B4d" secondAttribute="centerX" id="0Bj-ep-0iS"/>
                     <constraint firstItem="eiN-IY-uAJ" firstAttribute="top" secondItem="foN-9L-jLT" secondAttribute="top" id="1Xt-mj-p6K"/>
-                    <constraint firstItem="b1d-7F-TAk" firstAttribute="centerX" secondItem="njn-gD-bLd" secondAttribute="centerX" id="8Qq-gA-mKV"/>
-                    <constraint firstItem="9hJ-a1-DBL" firstAttribute="bottom" secondItem="njn-gD-bLd" secondAttribute="bottom" id="C71-rZ-Lei"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="top" secondItem="foN-9L-jLT" secondAttribute="top" constant="48" id="DKS-kv-PaD"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="centerX" secondItem="foN-9L-jLT" secondAttribute="centerX" id="DuQ-Tw-9x7"/>
                     <constraint firstAttribute="bottom" secondItem="eiN-IY-uAJ" secondAttribute="bottom" id="GDw-yL-idR"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="centerY" secondItem="foN-9L-jLT" secondAttribute="centerY" id="I5H-BF-awu"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="centerY" secondItem="eiN-IY-uAJ" secondAttribute="centerY" id="ToD-zm-NoY"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="centerX" secondItem="eiN-IY-uAJ" secondAttribute="centerX" id="U18-qc-8Kg"/>
-                    <constraint firstItem="9hJ-a1-DBL" firstAttribute="trailing" secondItem="njn-gD-bLd" secondAttribute="trailing" id="VC1-TS-QhY"/>
+                    <constraint firstItem="9hJ-a1-DBL" firstAttribute="bottom" secondItem="xRE-Rh-B4d" secondAttribute="bottom" id="IiE-9l-4Zf"/>
+                    <constraint firstItem="9hJ-a1-DBL" firstAttribute="trailing" secondItem="xRE-Rh-B4d" secondAttribute="trailing" id="J6C-uX-ShE"/>
+                    <constraint firstAttribute="bottom" secondItem="xRE-Rh-B4d" secondAttribute="bottom" constant="71" id="M5F-Tt-o1t"/>
+                    <constraint firstItem="b1d-7F-TAk" firstAttribute="top" secondItem="xRE-Rh-B4d" secondAttribute="bottom" constant="8" id="UNn-Nz-zUQ"/>
                     <constraint firstItem="eiN-IY-uAJ" firstAttribute="leading" secondItem="foN-9L-jLT" secondAttribute="leading" id="WQT-zH-Pmy"/>
-                    <constraint firstAttribute="bottom" secondItem="njn-gD-bLd" secondAttribute="bottom" constant="100.5" id="dMl-pc-nwg"/>
+                    <constraint firstItem="xRE-Rh-B4d" firstAttribute="centerX" secondItem="foN-9L-jLT" secondAttribute="centerX" id="dSr-7R-dBo"/>
                     <constraint firstAttribute="trailing" secondItem="eiN-IY-uAJ" secondAttribute="trailing" id="eVr-a2-EP7"/>
                     <constraint firstAttribute="trailing" secondItem="eiN-IY-uAJ" secondAttribute="trailing" id="lex-cb-lLC"/>
-                    <constraint firstItem="njn-gD-bLd" firstAttribute="width" secondItem="eiN-IY-uAJ" secondAttribute="height" multiplier="7.5:11" id="mlh-uY-opt"/>
+                    <constraint firstItem="xRE-Rh-B4d" firstAttribute="top" secondItem="foN-9L-jLT" secondAttribute="top" constant="72.5" id="nrP-V6-YdS"/>
                     <constraint firstAttribute="trailing" secondItem="SmF-70-Jjg" secondAttribute="trailing" id="oHY-W5-hMD"/>
-                    <constraint firstItem="b1d-7F-TAk" firstAttribute="top" secondItem="njn-gD-bLd" secondAttribute="bottom" constant="8" id="trD-bJ-M3o"/>
+                    <constraint firstItem="xRE-Rh-B4d" firstAttribute="centerY" secondItem="foN-9L-jLT" secondAttribute="centerY" id="sIK-W7-YVu"/>
                     <constraint firstItem="eiN-IY-uAJ" firstAttribute="top" secondItem="foN-9L-jLT" secondAttribute="top" id="uS1-Sj-BgV"/>
                     <constraint firstAttribute="bottom" secondItem="SmF-70-Jjg" secondAttribute="bottom" id="wPU-so-jKj"/>
                     <constraint firstItem="eiN-IY-uAJ" firstAttribute="leading" secondItem="foN-9L-jLT" secondAttribute="leading" id="yPG-Xz-7G0"/>
@@ -83,15 +97,13 @@
                         <exclude reference="eVr-a2-EP7"/>
                         <exclude reference="uS1-Sj-BgV"/>
                         <exclude reference="yPG-Xz-7G0"/>
-                        <exclude reference="DuQ-Tw-9x7"/>
-                        <exclude reference="I5H-BF-awu"/>
-                        <exclude reference="ToD-zm-NoY"/>
-                        <exclude reference="mlh-uY-opt"/>
+                        <exclude reference="sIK-W7-YVu"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
+                <outlet property="BaseView" destination="xRE-Rh-B4d" id="U8z-qO-hu6"/>
                 <outlet property="UserProfileBackground" destination="eiN-IY-uAJ" id="sFJ-ld-ggC"/>
                 <outlet property="UserProfileImage" destination="njn-gD-bLd" id="dk3-HQ-4HK"/>
             </connections>
@@ -100,5 +112,6 @@
     </objects>
     <resources>
         <image name="add" width="30" height="30"/>
+        <image name="profile_black" width="128" height="128"/>
     </resources>
 </document>

@@ -110,7 +110,6 @@ class ProfileTableViewController: UITableViewController, ProfileImageCellDelegat
         self.presentViewController(ImageOption, animated: true, completion: nil)
     }
     
-    
 //    func changeBackground() {
 //        if UIImagePickerController.isSourceTypeAvailable(.Camera){
 //            UserBImagePicker.sourceType = .Camera

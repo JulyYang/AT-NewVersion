@@ -22,8 +22,9 @@ class CalenderWeb: UIViewController, alertSheetDelegate{
 //        dismissPopupView()
     }
     
-    
+    @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var CalenderWebView: UIWebView!
+    @IBOutlet weak var DatePicker: UIDatePicker!
     @IBAction func BooknowButton(sender: AnyObject) {
         bookingConfirm()
     }
