@@ -198,11 +198,11 @@
 		189EB2DE1CCDB07800F6D758 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */,
 				189EB2DF1CCDB1EE00F6D758 /* ClassCell.swift */,
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
 				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
 				18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */,
-				18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

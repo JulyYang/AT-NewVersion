@@ -21,10 +21,10 @@ class BookingSuccess: UIView {
     @IBOutlet weak var TutorTitle: UILabel!
     @IBOutlet weak var SubTitle: UILabel!
     @IBAction func BookingCheck(sender: AnyObject) {
-//        let DesinationStoryboard = UIStoryboard(name: "", bundle: nil)
-//        let RootController = RootStoryboard.instantiateViewControllerWithIdentifier("MainTabBarController")
-//        self.window!.rootViewController = RootControllerself.removeFromSuperview()
-        
+        removeFromSuperview()
+        let DesStoryboard = UIStoryboard(name: "TList", bundle: nil)
+        let DesController = DesStoryboard.instantiateViewControllerWithIdentifier("ClassViewController")
+        self.window!.rootViewController = DesController
     }
     
     class func instanceFromNib() -> UIView {

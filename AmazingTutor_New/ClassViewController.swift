@@ -13,6 +13,39 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
     //, goToHangoutAlertDelegate {
     
     @IBOutlet weak var HeaderView: UIView!
+    
+    @IBOutlet weak var ScheduledNumber: UILabel!
+    @IBOutlet weak var ScheduledLabel: UILabel!
+    @IBOutlet weak var PastNumber: UILabel!
+    @IBOutlet weak var PastLabel: UILabel!
+    @IBOutlet weak var UnsheduledNumber: UILabel!
+    @IBOutlet weak var UnscheduledLabel: UILabel!
+    @IBOutlet weak var SubTitle: UILabel!
+    @IBAction func ScheduledButton(sender: AnyObject) {
+        ScheduledLabel.backgroundColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        ScheduledNumber.backgroundColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        SubTitle.textColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        SubTitle.text = "SCHEDULED"
+        pastColorBackToDefault()
+        unscheduledColorBackToDefault()
+    }
+    @IBAction func PastButton(sender: AnyObject) {
+        PastLabel.backgroundColor = UIColor(red: 255/255, green: 170/255, blue: 165/255, alpha: 1.0)
+        PastNumber.backgroundColor = UIColor(red: 255/255, green: 170/255, blue: 165/255, alpha: 1.0)
+        SubTitle.textColor = UIColor(red: 255/255, green: 170/255, blue: 165/255, alpha: 1.0)
+        SubTitle.text = "PAST"
+        sheduledColorBackToDefault()
+        unscheduledColorBackToDefault()
+    }
+    @IBAction func UnscheduledButton(sender: AnyObject) {
+        UnscheduledLabel.backgroundColor = UIColor(red: 255/255, green: 222/255, blue: 120/255, alpha: 1.0)
+        UnsheduledNumber.backgroundColor = UIColor(red: 255/255, green: 222/255, blue: 120/255, alpha: 1.0)
+        SubTitle.textColor = UIColor(red: 254/255, green: 217/255, blue: 112/255, alpha: 1.0)
+        SubTitle.text = "UNSCHEDULED"
+        sheduledColorBackToDefault()
+        pastColorBackToDefault()
+     }
+    
     @IBOutlet weak var ClassTable: UITableView!
     
     override func viewDidLoad() {
@@ -91,5 +124,17 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
     func navigationSetting(){
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 180.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+    }
+    func sheduledColorBackToDefault(){
+        ScheduledLabel.backgroundColor = UIColor.whiteColor()
+        ScheduledNumber.backgroundColor = UIColor.whiteColor()
+    }
+    func unscheduledColorBackToDefault(){
+        UnscheduledLabel.backgroundColor = UIColor.whiteColor()
+        UnsheduledNumber.backgroundColor = UIColor.whiteColor()
+    }
+    func pastColorBackToDefault(){
+        PastLabel.backgroundColor = UIColor.whiteColor()
+        PastNumber.backgroundColor = UIColor.whiteColor()
     }
 }
