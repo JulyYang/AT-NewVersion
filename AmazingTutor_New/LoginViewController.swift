@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +16,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var PasswordConfirmText: UITextField!
     @IBAction func SignupButton(sender: AnyObject) {
+        let emailtext = EmailTextField.text
+        let passwordtext = PasswordTextField.text
+        let passwordconfirm = PasswordConfirmText.text
+        
+        Alamofire.request(.POST, URLs.login, parameters: ["email": emailtext!, "password": passwordtext!, "api_key": ""]).responseJSON
+            { response in
+//                if JSON(response.result.value!)[""].stringValue == "OK"{
+                
+                }
+                
     }
     
     override func viewDidLoad() {

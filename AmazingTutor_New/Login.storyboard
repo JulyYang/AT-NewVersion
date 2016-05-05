@@ -68,8 +68,8 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="acH-sn-ASE"/>
                                         <exclude reference="DrZ-8H-SyG"/>
+                                        <exclude reference="acH-sn-ASE"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -263,8 +263,8 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="vSz-We-bzj"/>
                                         <exclude reference="QFx-uj-zll"/>
+                                        <exclude reference="vSz-We-bzj"/>
                                     </mask>
                                 </variation>
                             </textField>
@@ -324,9 +324,9 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="iWg-x7-dyP"/>
                                         <exclude reference="Ds3-6b-0nX"/>
                                         <exclude reference="fMf-4D-1KC"/>
+                                        <exclude reference="iWg-x7-dyP"/>
                                     </mask>
                                 </variation>
                             </imageView>

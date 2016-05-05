@@ -10,6 +10,9 @@
 		1832596D1CD075B0008FD1CD /* PropertySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832596C1CD075B0008FD1CD /* PropertySetting.swift */; };
 		1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837180C1CC3882D003F3D6C /* AppDelegate.swift */; };
 		183718141CC3882D003F3D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183718131CC3882D003F3D6C /* Assets.xcassets */; };
+		1837C58F1CDB21B2009A3C09 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837C58E1CDB21B2009A3C09 /* URLs.swift */; };
+		1837C5921CDB3A45009A3C09 /* Rating.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1837C5911CDB3A45009A3C09 /* Rating.storyboard */; };
+		1837C5941CDB3AB1009A3C09 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837C5931CDB3AB1009A3C09 /* StarRatingViewController.swift */; };
 		1872624B1CC4EEB9003340D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */; };
 		1872624D1CC4EF08003340D7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872624C1CC4EF08003340D7 /* Login.storyboard */; };
 		1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872624E1CC4EF71003340D7 /* LoginViewController.swift */; };
@@ -58,6 +61,9 @@
 		183718131CC3882D003F3D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183718181CC3882D003F3D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183718341CC3A39A003F3D6C /* AmazingTutor_New-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazingTutor_New-Bridging-Header.h"; sourceTree = "<group>"; };
+		1837C58E1CDB21B2009A3C09 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		1837C5911CDB3A45009A3C09 /* Rating.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rating.storyboard; sourceTree = "<group>"; };
+		1837C5931CDB3AB1009A3C09 /* StarRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingViewController.swift; sourceTree = "<group>"; };
 		1872624A1CC4EEB9003340D7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1872624C1CC4EF08003340D7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1872624E1CC4EF71003340D7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,8 @@
 				1832596C1CD075B0008FD1CD /* PropertySetting.swift */,
 				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */,
+				1837C58E1CDB21B2009A3C09 /* URLs.swift */,
+				1837C5901CDB3A26009A3C09 /* Rating */,
 				18F2DBF01CD49FD600B24762 /* Calender */,
 				189EB2E31CCE1DA100F6D758 /* Profile */,
 				189EB2DE1CCDB07800F6D758 /* Classes */,
@@ -198,6 +206,15 @@
 				18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		1837C5901CDB3A26009A3C09 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				1837C5911CDB3A45009A3C09 /* Rating.storyboard */,
+				1837C5931CDB3AB1009A3C09 /* StarRatingViewController.swift */,
+			);
+			name = Rating;
 			sourceTree = "<group>";
 		};
 		189EB2DE1CCDB07800F6D758 /* Classes */ = {
@@ -337,6 +354,7 @@
 				18ED6E7F1CD710FA00F08A16 /* HangoutAlert.xib in Resources */,
 				18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */,
 				189EB2E71CCE2F6E00F6D758 /* ProfileImageCell.xib in Resources */,
+				1837C5921CDB3A45009A3C09 /* Rating.storyboard in Resources */,
 				18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */,
 				18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */,
 			);
@@ -411,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				189EB2E11CCDB1EE00F6D758 /* ClassCell.swift in Sources */,
+				1837C58F1CDB21B2009A3C09 /* URLs.swift in Sources */,
 				18E8A6DD1CD8D44B00AA78B8 /* ClassViewController.swift in Sources */,
 				189EB2ED1CCE31A000F6D758 /* StudentDetail.swift in Sources */,
 				18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */,
@@ -420,6 +439,7 @@
 				18F2DBEF1CD49FBC00B24762 /* CalenderWeb.swift in Sources */,
 				1832596D1CD075B0008FD1CD /* PropertySetting.swift in Sources */,
 				1837180D1CC3882D003F3D6C /* AppDelegate.swift in Sources */,
+				1837C5941CDB3AB1009A3C09 /* StarRatingViewController.swift in Sources */,
 				18ED6E831CD711F100F08A16 /* BookingSuccess.swift in Sources */,
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
