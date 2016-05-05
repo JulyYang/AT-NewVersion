@@ -21,16 +21,14 @@ class HangoutAlert: UIView {
     @IBOutlet weak var TutorTitle: UILabel!
     @IBOutlet weak var SubTitle: UILabel!
     @IBOutlet weak var HangoutBtWebView: UIWebView!
-    @IBAction func goToHangoutBt(sender: AnyObject) {
+    @IBAction func goToHangoutBt(sender: GoToHangout) {
         let Hangurl = NSURL(string: "http://plok740122.com/hangout.html")
         let request = NSURLRequest(URL: Hangurl!)
         HangoutBtWebView.loadRequest(request)
         }
-    
     // 將xib上的item load進來view裡
     class func instanceFromNib() -> UIView {
         return UINib(nibName: "HangoutAlert", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
     }
-    
 }
 

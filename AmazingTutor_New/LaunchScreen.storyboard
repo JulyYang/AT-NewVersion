@@ -22,6 +22,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenPic" translatesAutoresizingMaskIntoConstraints="NO" id="e3y-Pc-d35">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Chinese Tutor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-54-95e">
+                                <rect key="frame" x="183" y="315.5" width="232.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmazingTutor" translatesAutoresizingMaskIntoConstraints="NO" id="o5y-qs-iZu">
                                 <rect key="frame" x="200" y="95" width="200" height="50"/>
                                 <constraints>
@@ -36,21 +42,34 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbk-gX-XbB">
+                                <rect key="frame" x="60" y="359" width="480" height="62.5"/>
+                                <string key="text">Amazingtutor brings you perfect and self-paced access to learn Chinese. Find enthusiastic and excellent teachers to complete your learning experience.</string>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="01U-uG-4Kq"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="51g-zv-DuU"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BZb-Pa-CO8"/>
+                            <constraint firstItem="uoL-54-95e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Crd-OE-0zo"/>
+                            <constraint firstItem="Mbk-gX-XbB" firstAttribute="width" secondItem="e3y-Pc-d35" secondAttribute="height" multiplier="0.8" id="Cyc-mL-5r3"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ERA-AB-SmN"/>
                             <constraint firstAttribute="trailing" secondItem="e3y-Pc-d35" secondAttribute="trailing" id="FLO-zS-GEX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e3y-Pc-d35" secondAttribute="trailing" constant="-20" id="P5c-IA-5kc"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="RFX-a2-gdp"/>
+                            <constraint firstItem="Mbk-gX-XbB" firstAttribute="top" secondItem="uoL-54-95e" secondAttribute="bottom" constant="15" id="Ttz-pX-vlo"/>
+                            <constraint firstItem="uoL-54-95e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.1" id="XNb-Zt-QKM"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="b0g-y9-AfW"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:3" id="eLL-R2-ftN"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.4" id="gg4-SB-fjn"/>
                             <constraint firstItem="e3y-Pc-d35" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kk0-bk-p0X"/>
                             <constraint firstItem="o5y-qs-iZu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="80" id="lIX-ki-dMK"/>
+                            <constraint firstItem="Mbk-gX-XbB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.8" id="ppD-fL-YT4"/>
+                            <constraint firstItem="Mbk-gX-XbB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rW7-jN-lSm"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e3y-Pc-d35" secondAttribute="bottom" id="wGI-sk-d9X"/>
                         </constraints>
                         <variation key="default">
@@ -60,6 +79,7 @@
                                 <exclude reference="P5c-IA-5kc"/>
                                 <exclude reference="b0g-y9-AfW"/>
                                 <exclude reference="lIX-ki-dMK"/>
+                                <exclude reference="Cyc-mL-5r3"/>
                                 <exclude reference="RFX-a2-gdp"/>
                             </mask>
                         </variation>

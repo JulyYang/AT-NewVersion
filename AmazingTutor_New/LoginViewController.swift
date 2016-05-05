@@ -9,14 +9,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-//, GIDSignInUIDelegate {
     
+    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var PasswordConfirmText: UITextField!
+    @IBAction func SignupButton(sender: AnyObject) {
+    }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-//        GIDSignIn.sharedInstance().uiDelegate = self
-        
         
     }
 
@@ -24,20 +26,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-//    func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-//        print("a")
-//    }
-//    
-//    // Present a view that prompts the user to sign in with Google
-//    func signIn(signIn: GIDSignIn!, presentViewController viewController: UIViewController!) {
-//        self.presentViewController(viewController, animated: true, completion: nil)
-//        print("b")
-//    }
-//    
-//    // Dismiss the "Sign in with Google" view
-//    func signIn(signIn: GIDSignIn!, dismissViewController viewController: UIViewController!) {
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
 
 }
 

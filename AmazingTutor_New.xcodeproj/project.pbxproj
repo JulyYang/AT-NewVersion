@@ -36,6 +36,8 @@
 		18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */; };
 		18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */; };
 		18E8A6DD1CD8D44B00AA78B8 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */; };
+		18E995CD1CDAE8F5004C2B12 /* GoToHangout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E995CC1CDAE8F5004C2B12 /* GoToHangout.swift */; };
+		18E995D11CDB03A4004C2B12 /* SubLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E995D01CDB03A4004C2B12 /* SubLoginViewController.swift */; };
 		18E9DDF51CC473B3000896EC /* TListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF41CC473B3000896EC /* TListCell.swift */; };
 		18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9DDF61CC47531000896EC /* TeacherDetail.swift */; };
 		18ED6E591CD6EC7300F08A16 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED6E581CD6EC7300F08A16 /* SearchView.swift */; };
@@ -82,6 +84,8 @@
 		18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReuseCell.swift; sourceTree = "<group>"; };
 		18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInReuseCell.xib; sourceTree = "<group>"; };
 		18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		18E995CC1CDAE8F5004C2B12 /* GoToHangout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToHangout.swift; sourceTree = "<group>"; };
+		18E995D01CDB03A4004C2B12 /* SubLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubLoginViewController.swift; sourceTree = "<group>"; };
 		18E9DDF41CC473B3000896EC /* TListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TListCell.swift; sourceTree = "<group>"; };
 		18E9DDF61CC47531000896EC /* TeacherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetail.swift; sourceTree = "<group>"; };
 		18ED6E581CD6EC7300F08A16 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			children = (
 				1872624C1CC4EF08003340D7 /* Login.storyboard */,
 				1872624E1CC4EF71003340D7 /* LoginViewController.swift */,
+				18E995D01CDB03A4004C2B12 /* SubLoginViewController.swift */,
 				1894682B1CC868B9003581E9 /* SignInWebPage.swift */,
 				18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */,
 				18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */,
@@ -203,6 +208,7 @@
 				189EB2E01CCDB1EE00F6D758 /* ClassCell.xib */,
 				18ED6E841CD712C300F08A16 /* HangoutAlert.swift */,
 				18ED6E7D1CD710FA00F08A16 /* HangoutAlert.xib */,
+				18E995CC1CDAE8F5004C2B12 /* GoToHangout.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -419,6 +425,7 @@
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
 				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
 				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
+				18E995D11CDB03A4004C2B12 /* SubLoginViewController.swift in Sources */,
 				18C4685E1CC656DC00890A97 /* TBackgroundCell.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
 				18F150E31CD3A1340044987A /* RatingCell.swift in Sources */,
@@ -427,6 +434,7 @@
 				1894682C1CC868B9003581E9 /* SignInWebPage.swift in Sources */,
 				18A0491C1CCE826600600FED /* ProfileImageCell.swift in Sources */,
 				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
+				18E995CD1CDAE8F5004C2B12 /* GoToHangout.swift in Sources */,
 				18C468611CC6592600890A97 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JulyYang.AmazingTutor-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,6 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmazingTutor_New/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JulyYang.AmazingTutor-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -47,7 +47,7 @@
                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.91989164089999997" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhG-aG-lmD">
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhG-aG-lmD" customClass="GoToHangout" customModule="AmazingTutor_New" customModuleProvider="target">
                             <rect key="frame" x="71" y="193" width="138" height="33"/>
                             <color key="backgroundColor" red="0.98823529409999999" green="0.32156862749999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
