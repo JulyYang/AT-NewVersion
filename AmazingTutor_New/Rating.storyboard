@@ -9,7 +9,7 @@
         <!--Star Rating View Controller-->
         <scene sceneID="k92-SP-nev">
             <objects>
-                <viewController id="arK-2i-LHR" customClass="StarRatingViewController" customModule="AmazingTutor_New" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StarRating" id="arK-2i-LHR" customClass="StarRatingViewController" customModule="AmazingTutor_New" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rsz-GB-e0A"/>
                         <viewControllerLayoutGuide type="bottom" id="Dco-27-wGl"/>
@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We hope you had a great lesson! please leave your teacher a review on their profile for other students to see." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-LJ-o4G">
                                 <rect key="frame" x="60" y="263" width="480" height="37"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqS-pF-7Gc">

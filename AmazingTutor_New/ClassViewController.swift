@@ -9,9 +9,8 @@
 import UIKit
 import STZPopupView
 
-class ClassViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
-    //, goToHangoutAlertDelegate {
-    
+class ClassViewController: UIViewController, UITableViewDelegate,UITableViewDataSource , goToHangoutAlertDelegate, UIGestureRecognizerDelegate {
+        
     @IBOutlet weak var HeaderView: UIView!
     
     @IBOutlet weak var ScheduledNumber: UILabel!
@@ -59,6 +58,11 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
         ClassTable.delegate = self
         
         navigationSetting()
+        
+        ScheduledLabel.backgroundColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        ScheduledNumber.backgroundColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        SubTitle.textColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
+        SubTitle.text = "SCHEDULED"
     }
     
     override func didReceiveMemoryWarning() {
@@ -97,7 +101,7 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let _ = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath)
+        let _ = tableView.dequeueReusableCellWithIdentifier("ClassContent", forIndexPath: indexPath) as! ClassCell
         goToHangoutAlert()
     }
     

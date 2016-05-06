@@ -47,65 +47,77 @@
                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.91989164089999997" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhG-aG-lmD" customClass="GoToHangout" customModule="AmazingTutor_New" customModuleProvider="target">
-                            <rect key="frame" x="71" y="193" width="138" height="33"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go To Hangout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-SD-M3q">
+                            <rect key="frame" x="65" y="189" width="150" height="41"/>
                             <color key="backgroundColor" red="0.98823529409999999" green="0.32156862749999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="RhG-aG-lmD" secondAttribute="height" multiplier="171:35" id="DFo-fB-QxW"/>
-                                <constraint firstAttribute="height" constant="33" id="Xfo-1W-FHd"/>
-                                <constraint firstAttribute="width" constant="112" id="u9u-G7-oVH"/>
+                                <constraint firstAttribute="height" constant="41" id="AD1-D3-EMc"/>
+                                <constraint firstAttribute="height" constant="33" id="OfG-rl-h9G"/>
+                                <constraint firstAttribute="width" constant="150" id="pgu-P4-Wjp"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                            <state key="normal" title="  Go to Hangout  ">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="DFo-fB-QxW"/>
-                                    <exclude reference="u9u-G7-oVH"/>
+                                    <exclude reference="OfG-rl-h9G"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=compact-widthClass=compact">
-                                <mask key="constraints">
-                                    <exclude reference="DFo-fB-QxW"/>
-                                </mask>
-                            </variation>
-                            <connections>
-                                <action selector="goToHangoutBt:" destination="-1" eventType="touchUpInside" id="xpS-o8-PeO"/>
-                            </connections>
-                        </button>
+                        </label>
                         <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuA-SD-bYj">
-                            <rect key="frame" x="70" y="35" width="138" height="33"/>
+                            <rect key="frame" x="65" y="189" width="150" height="41"/>
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="101-rq-PPx" appends="YES" id="VO1-Fu-6xp"/>
+                            </connections>
                         </webView>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="RhG-aG-lmD" firstAttribute="centerX" secondItem="Law-El-YLV" secondAttribute="centerX" id="07p-X5-nZc"/>
                         <constraint firstAttribute="width" secondItem="Law-El-YLV" secondAttribute="height" multiplier="1:1" id="23n-Sv-XJU"/>
+                        <constraint firstItem="uiH-SD-M3q" firstAttribute="height" secondItem="kuA-SD-bYj" secondAttribute="height" id="35B-fg-peI"/>
                         <constraint firstItem="ifV-PA-hBS" firstAttribute="centerY" secondItem="UDW-i0-DT6" secondAttribute="centerY" id="38L-hZ-TrF"/>
                         <constraint firstItem="Dsz-6O-gZ2" firstAttribute="centerX" secondItem="Law-El-YLV" secondAttribute="centerX" id="44L-wF-Jga"/>
-                        <constraint firstItem="kuA-SD-bYj" firstAttribute="leading" secondItem="Law-El-YLV" secondAttribute="leading" constant="70" id="7eK-Rp-whu"/>
-                        <constraint firstItem="RhG-aG-lmD" firstAttribute="centerY" secondItem="Law-El-YLV" secondAttribute="centerY" multiplier="1.5" id="DF3-ZW-drO"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="leading" secondItem="Law-El-YLV" secondAttribute="leading" constant="65" id="7eK-Rp-whu"/>
                         <constraint firstItem="ifV-PA-hBS" firstAttribute="leading" secondItem="UDW-i0-DT6" secondAttribute="trailing" constant="27" id="F8D-ew-VsQ"/>
+                        <constraint firstItem="uiH-SD-M3q" firstAttribute="width" secondItem="kuA-SD-bYj" secondAttribute="width" id="Icq-ZU-HH3"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="leading" secondItem="uiH-SD-M3q" secondAttribute="leading" id="J9w-bi-1TF"/>
                         <constraint firstItem="UDW-i0-DT6" firstAttribute="baseline" secondItem="ifV-PA-hBS" secondAttribute="baseline" id="LTB-9u-u9J"/>
-                        <constraint firstItem="kuA-SD-bYj" firstAttribute="top" secondItem="Law-El-YLV" secondAttribute="top" constant="35" id="SDX-nt-jZn"/>
-                        <constraint firstItem="ifV-PA-hBS" firstAttribute="top" secondItem="kuA-SD-bYj" secondAttribute="bottom" constant="8" id="Sn9-7f-oCR"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="top" secondItem="uiH-SD-M3q" secondAttribute="top" id="Lcp-nf-5Gf"/>
+                        <constraint firstItem="uiH-SD-M3q" firstAttribute="centerY" secondItem="Law-El-YLV" secondAttribute="centerY" multiplier="1.5" id="OMe-rS-DlI"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="trailing" secondItem="uiH-SD-M3q" secondAttribute="trailing" id="RVz-zI-EKO"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="top" secondItem="Law-El-YLV" secondAttribute="top" constant="185" id="SDX-nt-jZn"/>
+                        <constraint firstItem="ifV-PA-hBS" firstAttribute="top" secondItem="kuA-SD-bYj" secondAttribute="bottom" constant="-150" id="Sn9-7f-oCR"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="centerY" secondItem="Law-El-YLV" secondAttribute="centerY" multiplier="1.5" id="Zmq-P9-5yM"/>
                         <constraint firstItem="Dsz-6O-gZ2" firstAttribute="centerY" secondItem="Law-El-YLV" secondAttribute="centerY" id="bGH-DE-7xw"/>
                         <constraint firstItem="ifV-PA-hBS" firstAttribute="height" secondItem="UDW-i0-DT6" secondAttribute="height" id="cjM-7C-4hV"/>
-                        <constraint firstAttribute="trailing" secondItem="kuA-SD-bYj" secondAttribute="trailing" constant="72" id="fQL-Oj-TwC"/>
+                        <constraint firstAttribute="trailing" secondItem="kuA-SD-bYj" secondAttribute="trailing" constant="65" id="fQL-Oj-TwC"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="centerX" secondItem="Law-El-YLV" secondAttribute="centerX" id="gIw-xR-NG6"/>
                         <constraint firstItem="UDW-i0-DT6" firstAttribute="centerY" secondItem="Law-El-YLV" secondAttribute="centerY" multiplier="0.72" id="gkr-7L-nA1"/>
                         <constraint firstItem="ifV-PA-hBS" firstAttribute="leading" secondItem="UDW-i0-DT6" secondAttribute="trailing" id="h2I-MY-M64"/>
                         <constraint firstAttribute="width" constant="280" id="iia-nm-82i"/>
+                        <constraint firstItem="uiH-SD-M3q" firstAttribute="centerX" secondItem="Law-El-YLV" secondAttribute="centerX" id="ixV-Bv-BS7"/>
+                        <constraint firstItem="uiH-SD-M3q" firstAttribute="width" secondItem="kuA-SD-bYj" secondAttribute="width" id="lTt-gE-AeH"/>
                         <constraint firstAttribute="width" secondItem="Law-El-YLV" secondAttribute="height" multiplier="1:1" id="mD6-r6-R7c"/>
                         <constraint firstItem="UDW-i0-DT6" firstAttribute="leading" secondItem="Law-El-YLV" secondAttribute="leading" constant="27" id="pek-Yb-WL8"/>
                         <constraint firstItem="UDW-i0-DT6" firstAttribute="centerX" secondItem="Law-El-YLV" secondAttribute="centerX" multiplier="0.7" id="qKk-la-XXT"/>
+                        <constraint firstItem="kuA-SD-bYj" firstAttribute="bottom" secondItem="uiH-SD-M3q" secondAttribute="bottom" id="zRW-QI-1xR"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="mD6-r6-R7c"/>
                             <exclude reference="LTB-9u-u9J"/>
                             <exclude reference="F8D-ew-VsQ"/>
+                            <exclude reference="Sn9-7f-oCR"/>
+                            <exclude reference="35B-fg-peI"/>
+                            <exclude reference="Icq-ZU-HH3"/>
+                            <exclude reference="lTt-gE-AeH"/>
+                            <exclude reference="7eK-Rp-whu"/>
+                            <exclude reference="SDX-nt-jZn"/>
+                            <exclude reference="Zmq-P9-5yM"/>
+                            <exclude reference="fQL-Oj-TwC"/>
+                            <exclude reference="gIw-xR-NG6"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=compact-widthClass=compact">
@@ -126,11 +138,13 @@
             <connections>
                 <outlet property="AmazingTitle" destination="Dsz-6O-gZ2" id="LCp-9o-8XT"/>
                 <outlet property="BaseView" destination="Law-El-YLV" id="7yz-RE-zr2"/>
+                <outlet property="GoToHangout" destination="uiH-SD-M3q" id="xFw-F2-veS"/>
                 <outlet property="HangoutBtWebView" destination="kuA-SD-bYj" id="FkE-do-a7E"/>
                 <outlet property="SubTitle" destination="UDW-i0-DT6" id="q16-bx-wV8"/>
                 <outlet property="TutorTitle" destination="ifV-PA-hBS" id="7TK-fL-bBV"/>
             </connections>
             <point key="canvasLocation" x="292" y="712"/>
         </view>
+        <tapGestureRecognizer id="101-rq-PPx"/>
     </objects>
 </document>

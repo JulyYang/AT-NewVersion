@@ -10,6 +10,7 @@ import UIKit
 
 protocol alertSheetDelegate: class {
     func fadeOut()
+    func backToMainPage()
 }
 
 class BookingSuccess: UIView {
@@ -22,9 +23,10 @@ class BookingSuccess: UIView {
     @IBOutlet weak var SubTitle: UILabel!
     @IBAction func BookingCheck(sender: AnyObject) {
         removeFromSuperview()
-        let DesStoryboard = UIStoryboard(name: "TList", bundle: nil)
-        let DesController = DesStoryboard.instantiateViewControllerWithIdentifier("ClassViewController")
-        self.window!.rootViewController = DesController
+        alertDelegate?.backToMainPage()
+//        let DesStoryboard = UIStoryboard(name: "TList", bundle: nil)
+//        let DesController = DesStoryboard.instantiateViewControllerWithIdentifier("ClassViewController")
+//        self.window!.rootViewController = DesController
     }
     
     class func instanceFromNib() -> UIView {

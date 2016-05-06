@@ -29,7 +29,7 @@ class CalenderWeb: UIViewController, alertSheetDelegate{
         bookingConfirm()
     }
     @IBAction func CancelWebView(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        backToMainPage()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -51,4 +51,7 @@ class CalenderWeb: UIViewController, alertSheetDelegate{
         self.tabBarController?.tabBar.hidden = false
     }
     
+    func backToMainPage(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
