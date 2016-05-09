@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var EmailTextField: UITextField!
@@ -25,18 +25,21 @@ class LoginViewController: UIViewController {
 ////                if JSON(response.result.value!)[""].stringValue == "OK"{
 //                
 //                }
-//                
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.EmailTextField.delegate = self
+        self.NameTextField.delegate = self
+        self.PasswordTextField.delegate = self
+        self.PasswordConfirmText.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
+        
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
-

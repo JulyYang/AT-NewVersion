@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class Teacher {
     var Teacher_id: String?
-    var TeacherVideoURL: UIImage?
+    var TeacherVideoURL: String?
     var TeacherImageURL: String?
     var TeacherNationalityImage: UIImage?
     var TeacherName: String?

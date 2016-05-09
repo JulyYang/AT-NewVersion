@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6CB644B633A4455AA37D7AED'
+               BlueprintIdentifier = '37FC77F1D93228560C05F5A5'
                BlueprintName = 'STZPopupView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'STZPopupView.framework'>

@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 class TBackground{
-    static let BackgroundText = "Background"
-    static var BackgroundWeb = "https://dojo.alphacamp.co/users/sign_in"
+
 }
 

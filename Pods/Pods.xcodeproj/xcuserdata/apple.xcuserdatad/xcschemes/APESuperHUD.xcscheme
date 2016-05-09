@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B79D4A3AC466C325F899F912'
+               BlueprintIdentifier = '3E01528193DDBEEEC918BECC'
                BlueprintName = 'APESuperHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'APESuperHUD.framework'>

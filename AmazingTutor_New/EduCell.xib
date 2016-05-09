@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="pHP-hU-hxM" customClass="EduCell" customModule="AmazingTutor_New" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pHP-hU-hxM" id="IP3-vF-0ik">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bd-hI-64f">
+                        <rect key="frame" x="167" y="8" width="30.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82i-4f-69n">
+                        <rect key="frame" x="10" y="22" width="344" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHO-Xc-9sl">
+                        <rect key="frame" x="10" y="45" width="344" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gz-UX-tr0">
+                        <rect key="frame" x="10" y="65" width="344" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6gz-UX-tr0" firstAttribute="top" secondItem="fHO-Xc-9sl" secondAttribute="bottom" constant="4" id="4H0-D6-Mb1"/>
+                    <constraint firstItem="6gz-UX-tr0" firstAttribute="leading" secondItem="IP3-vF-0ik" secondAttribute="leading" constant="10" id="BBD-Uj-lGB"/>
+                    <constraint firstItem="82i-4f-69n" firstAttribute="top" secondItem="5Bd-hI-64f" secondAttribute="bottom" id="BbL-i0-mL5"/>
+                    <constraint firstItem="82i-4f-69n" firstAttribute="centerY" secondItem="IP3-vF-0ik" secondAttribute="centerY" multiplier="0.6" id="Bt8-kt-rty"/>
+                    <constraint firstItem="fHO-Xc-9sl" firstAttribute="centerY" secondItem="IP3-vF-0ik" secondAttribute="centerY" constant="19.5" id="Byq-kA-ErP"/>
+                    <constraint firstAttribute="trailing" secondItem="fHO-Xc-9sl" secondAttribute="trailing" constant="10" id="H0l-2J-bgQ"/>
+                    <constraint firstItem="fHO-Xc-9sl" firstAttribute="centerX" secondItem="IP3-vF-0ik" secondAttribute="centerX" id="IRR-qX-CqQ"/>
+                    <constraint firstAttribute="bottom" secondItem="6gz-UX-tr0" secondAttribute="bottom" constant="10" id="NP9-Fc-RoE"/>
+                    <constraint firstAttribute="trailing" secondItem="82i-4f-69n" secondAttribute="trailing" constant="10" id="Pr4-JM-cCO"/>
+                    <constraint firstItem="fHO-Xc-9sl" firstAttribute="top" secondItem="82i-4f-69n" secondAttribute="bottom" constant="4" id="RAX-Jk-Rmy"/>
+                    <constraint firstItem="82i-4f-69n" firstAttribute="leading" secondItem="IP3-vF-0ik" secondAttribute="leading" constant="10" id="RtT-8j-EfA"/>
+                    <constraint firstItem="5Bd-hI-64f" firstAttribute="top" secondItem="IP3-vF-0ik" secondAttribute="top" constant="8" id="RvJ-cW-fk6"/>
+                    <constraint firstItem="5Bd-hI-64f" firstAttribute="centerX" secondItem="IP3-vF-0ik" secondAttribute="centerX" id="UYZ-Nx-O7s"/>
+                    <constraint firstAttribute="bottom" secondItem="fHO-Xc-9sl" secondAttribute="bottom" constant="10" id="XPk-WP-ktT"/>
+                    <constraint firstAttribute="trailing" secondItem="6gz-UX-tr0" secondAttribute="trailing" constant="10" id="a49-da-FRf"/>
+                    <constraint firstItem="6gz-UX-tr0" firstAttribute="centerX" secondItem="IP3-vF-0ik" secondAttribute="centerX" id="bX9-nk-Pfv"/>
+                    <constraint firstItem="fHO-Xc-9sl" firstAttribute="leading" secondItem="IP3-vF-0ik" secondAttribute="leading" constant="10" id="dgI-RW-pfR"/>
+                    <constraint firstItem="5Bd-hI-64f" firstAttribute="centerY" secondItem="IP3-vF-0ik" secondAttribute="centerY" multiplier="0.3" id="kLI-1i-E5f"/>
+                    <constraint firstAttribute="bottom" secondItem="6gz-UX-tr0" secondAttribute="bottom" constant="10" id="pWY-Aj-cNY"/>
+                    <constraint firstItem="82i-4f-69n" firstAttribute="centerX" secondItem="IP3-vF-0ik" secondAttribute="centerX" id="zb8-Bk-xsB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Bt8-kt-rty"/>
+                        <exclude reference="Byq-kA-ErP"/>
+                        <exclude reference="XPk-WP-ktT"/>
+                        <exclude reference="pWY-Aj-cNY"/>
+                        <exclude reference="kLI-1i-E5f"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="EduDetailLabel" destination="fHO-Xc-9sl" id="khX-lt-jab"/>
+                <outlet property="EduTitleLabel" destination="82i-4f-69n" id="ncL-n1-bHK"/>
+                <outlet property="YearLabel" destination="5Bd-hI-64f" id="at6-jE-beH"/>
+                <outlet property="introLabel" destination="6gz-UX-tr0" id="SaQ-RD-2Jo"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="198"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -17,6 +17,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.11.0):
     - FBSDKCoreKit
+  - Firebase (2.5.1)
   - Google/Core (2.0.4):
     - GoogleInterchangeUtilities (~> 1.0)
     - GoogleNetworkingUtilities (~> 1.0)
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
+  - Firebase
   - Google/SignIn
   - STZPopupView
   - SwiftyJSON
@@ -70,6 +72,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
   FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a
   FBSDKShareKit: 2d1746144cfc8a9dbbd24997c34ee0471be51b6a
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   Google: d0932824c5b97c96be489aa6f4e8cd6c294d637d
   GoogleAppUtilities: 974598e8ed618c74ead33541d9caffbc3d144266
   GoogleAuthUtilities: 79e4143c77a08081a480b08df27a066cc8944f43

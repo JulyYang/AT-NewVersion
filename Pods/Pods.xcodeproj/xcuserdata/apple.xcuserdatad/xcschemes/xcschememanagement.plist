@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AmazingTutor_New.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,6 +67,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0D23CC80CEF11C20807A93E89B09D74D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
 		<dict>
 			<key>primary</key>
@@ -87,6 +97,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>68826601B4E905E653DA09C63F54E42B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6A932845C7A5BE5374224A90EA874591</key>
 		<dict>
 			<key>primary</key>
@@ -97,22 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90CEE3C8E975FCF43C86533831A227CA</key>
+		<key>B7AC9326D819482593FE118E915409D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6AB6D9BF3836F982E4CC4E1DA077952</key>
+		<key>BEB79CDC9994424C0DA3440E94509DCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C613182083E4F0540EE3B6A2DD9F888C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CB056F002F1C2C5884552F7D75C9D4F5</key>
+		<key>CB68D156527649752EBE2FD8BC6D2251</key>
 		<dict>
 			<key>primary</key>
 			<true/>

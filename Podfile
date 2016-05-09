@@ -16,6 +16,7 @@ pod 'YouTubePlayer'
 pod 'DGElasticPullToRefresh'
 pod 'STZPopupView'
 pod 'APESuperHUD'
+pod 'Firebase'
 
 
 
