@@ -77,7 +77,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="6Oe-EG-R4a" firstAttribute="baseline" secondItem="JQZ-52-nPJ" secondAttribute="baseline" id="D4G-br-ghc"/>
                         <constraint firstItem="JQZ-52-nPJ" firstAttribute="height" secondItem="6Oe-EG-R4a" secondAttribute="height" id="EYG-R3-nNa"/>
@@ -109,7 +109,7 @@
                     </variation>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.66666666669999997" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="gT4-v2-Ygy" firstAttribute="leading" secondItem="mAa-js-FT6" secondAttribute="leading" constant="10" id="0PH-c5-0Nw"/>
                 <constraint firstAttribute="trailing" secondItem="gT4-v2-Ygy" secondAttribute="trailing" constant="10" id="AeS-X5-4Sr"/>

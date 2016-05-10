@@ -11,26 +11,19 @@ import SwiftyJSON
 
 class Student{
     
-    var UserName = "July Yang"
-    var Email = "julyba3101@gmail.com"
-    var Password : String?
+    var UserName: String?
+    var Email: String?
+    var Password: String?
     var ResetPassword: String?
-    var ProfileImage = UIImage(contentsOfFile: "Bob_minions_hands")
-    var BackgroundImage = UIImage(contentsOfFile:"")
-    var City = "Banana Kingdom"
-    var StarRating : Int?
-    var Comment = "The best teacher ever have"
-    var HangoutLink :String?
+    var ProfileImage: String?
+    var BackgroundImage: UIImage?
+    var UserNationality: String?
+    var City: String?
+    var StarRating : String?
+    var RatingDate: String?
+    var UserComment: String?
+    var HangoutLink: String?
 
-//    var Id: String?
-//    var Name: String?
-//    var ImageURL: String?
-//    var City: String?
-//    var ScheduledCourse: [String] = []
-//    var PastCourse: [String] = []
-//    var UnscheduledCourse:[String] = []
-//    var StarRating: String?
-//    var Comment: String?
 
 
 

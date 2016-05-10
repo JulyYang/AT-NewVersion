@@ -10,7 +10,13 @@ import UIKit
 
 class RatingCell: UITableViewCell {
 
-    @IBOutlet weak var testBT: UIButton!
+    @IBOutlet weak var UserImage: UIImageView!
+    @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var UserNationality: UILabel!
+    @IBOutlet weak var StarComment: UILabel!
+    @IBOutlet weak var CommentDate: UILabel!
+    @IBOutlet weak var Comment: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

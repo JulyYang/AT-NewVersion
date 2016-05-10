@@ -12,7 +12,7 @@ import SwiftyJSON
 import DGElasticPullToRefresh
 import STZPopupView
 
-var TListArray = [Teacher]()
+//var TListArray = [Teacher]()
 var ArrayNumber: Int?
 
 
@@ -20,6 +20,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     
     @IBOutlet weak var TListTable: UITableView!
     var searchController: UISearchController!
+    var TeacherCollection: AllTeachers = AllTeachers()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
         TListTable.estimatedRowHeight = 500.0
         
         self.definesPresentationContext = true
+        TListTable.delegate = self
         
         searchbarSetting()
         navigationSetting()
@@ -41,9 +43,9 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let SearchAlert = SearchView.instanceFromNib()
-        SearchAlert.frame = CGRectMake(0, 0, self.view.bounds.width, (self.view.bounds.height)*0.4)
-        self.view.addSubview(SearchAlert)
+//        let SearchAlert = SearchView.instanceFromNib()
+//        SearchAlert.frame = CGRectMake(0, 0, self.view.bounds.width, (self.view.bounds.height)*0.4)
+//        self.view.addSubview(SearchAlert)
 //      presentPopupView(SearchAlert)
         
 //      self.searchController.active = false 害我當機嗚嗚嗚
@@ -62,34 +64,44 @@ class TListTableViewController: UITableViewController, UISearchControllerDelegat
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return TeacherCollection.ArrayTeachers.count
 //            TListArray.count
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let TeacherCell = TListTable.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath)
         self.performSegueWithIdentifier("ShowTDetail", sender: TeacherCell)
-//        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
-//        self.performSegueWithIdentifier("ShowTDetail", sender: tableView)
+        TListTable.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
         print("\(row)")
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowTDetail"{
+            let indexPath = TListTable.indexPathForSelectedRow
+            let destinationController = segue.destinationViewController as! TInfoViewController
+            destinationController.TDetailIndex = (indexPath!.row)
+        }
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tcell", forIndexPath: indexPath) as! TListCell
         
-        let myURL = NSURL(string:"https://www.youtube.com/watch?v=sFukyIIM1XI")
+        let myURL = TeacherCollection.ArrayTeachers[indexPath.row].TeacherVideoURL
         cell.TeacherVideo.loadVideoURL(myURL!)
         
-        cell.TeacherImage.image = UIImage(named: "Bob_minions_hands")
+        cell.TeacherImage.image = UIImage(named: TeacherCollection.ArrayTeachers[indexPath.row].TeacherImageURL!)
         cell.TeacherImage.layer.cornerRadius = 60.0
         cell.TNationalityImage.image = UIImage(named: "ROC_FLAG")
-        cell.TeacherNameLabel.text = "BANANA is the best"
+        cell.TeacherNameLabel.text = TeacherCollection.ArrayTeachers[indexPath.row].TeacherName
         cell.LanguageLabel.text = "Chinese, English, Bananise"
-        cell.RateLabel.text = "400 - 650 TWD/hour"
-        cell.TrailLabel.text = "Yes"
-        cell.CommentLabel.text = "(698)"
+        cell.StarLabel.text = TeacherCollection.ArrayTeachers[indexPath.row].StarScores
+        cell.RateLabel.text = TeacherCollection.ArrayTeachers[indexPath.row].Rate
+        cell.RateLabel.textColor = UIColor.redColor()
+        cell.TrailLabel.text = TeacherCollection.ArrayTeachers[indexPath.row].Trail
+        cell.CommentLabel.text = TeacherCollection.ArrayTeachers[indexPath.row].CommentNumber
+        cell.TeacherSelfIntroLabel.text = nil
 
         return cell
     }

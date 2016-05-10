@@ -11,7 +11,9 @@ import APESuperHUD
 
 class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var TDetailIndex : Int?
+    var TDetailIndex : Int = 0
+    var TeacherCollection: AllTeachers = AllTeachers()
+    var StudentCollection: AllStudents = AllStudents()
     
     @IBOutlet weak var TInfoTable: UITableView!
     
@@ -62,8 +64,7 @@ class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewD
             return 4
 //            return data.count
         default:
-            return 5
-//            return data.count
+            return StudentCollection.ArrayStudents.count
         }
     }
     
@@ -71,17 +72,20 @@ class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch indexPath.section{
         case 0:
             let cell = TInfoTable.dequeueReusableCellWithIdentifier("TDCell", forIndexPath: indexPath) as! TListCell
-            let myURL = NSURL(string:"https://www.youtube.com/watch?v=sFukyIIM1XI")
+            let myURL = TeacherCollection.ArrayTeachers[TDetailIndex].TeacherVideoURL
             cell.TeacherVideo.loadVideoURL(myURL!)
             
-            cell.TeacherImage.image = UIImage(named: "Bob_minions_hands")
+            cell.TeacherImage.image = UIImage(named: TeacherCollection.ArrayTeachers[TDetailIndex].TeacherImageURL!)
             cell.TeacherImage.layer.cornerRadius = 60.0
             cell.TNationalityImage.image = UIImage(named: "ROC_FLAG")
-            cell.TeacherNameLabel.text = "BANANA is the best"
+            cell.TeacherNameLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].TeacherName
             cell.LanguageLabel.text = "Chinese, English, Bananise"
-            cell.RateLabel.text = "400 - 650 TWD/hour"
-            cell.TrailLabel.text = "Yes"
-            cell.CommentLabel.text = "(698)"
+            cell.RateLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].Rate
+            cell.RateLabel.textColor = UIColor.redColor()
+            cell.TrailLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].Trail
+            cell.StarLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].StarScores
+            cell.CommentLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].CommentNumber
+            cell.TeacherSelfIntroLabel.text = TeacherCollection.ArrayTeachers[TDetailIndex].TeacherSelfIntro
             cell.selectionStyle = .None
             return cell
             
@@ -98,12 +102,21 @@ class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewD
             
         case 2:
             let cell = TInfoTable.dequeueReusableCellWithIdentifier("WCell", forIndexPath: indexPath) as! EduCell
-            
+            cell.YearLabel.text = "1880-2230"
+            cell.EduTitleLabel.text = ""
+            cell.EduDetailLabel.text = "Dr. Hockings – a member of the American Holistic Medical Association and the American Diabetes Association (ADA)"
+            cell.introLabel.text = "According to Dr. Hockings' latest research, which is also included in his best selling new book. Imagine Living Without Type 2 Diabetes: Discover A Natural Alternative to Pharmaceuticals, there are 26 million people with Type 2 Diabetes in the U.S. and 79 million pre-diabetics whose blood sugar is at a point just below being diagnosed as Type 2."
             cell.selectionStyle = .None
             return cell
             
         default:
             let cell = TInfoTable.dequeueReusableCellWithIdentifier("RCELL", forIndexPath: indexPath) as! RatingCell
+//            cell.UserImage.image = UIImage
+            cell.UserName.text = StudentCollection.ArrayStudents[indexPath.row].UserName
+            cell.UserNationality.text = StudentCollection.ArrayStudents[indexPath.row].UserNationality
+            cell.StarComment.text = StudentCollection.ArrayStudents[indexPath.row].StarRating
+            cell.Comment.text = StudentCollection.ArrayStudents[indexPath.row].UserComment
+            cell.CommentDate.text = StudentCollection.ArrayStudents[indexPath.row].RatingDate
             cell.selectionStyle = .None
             return cell
         }

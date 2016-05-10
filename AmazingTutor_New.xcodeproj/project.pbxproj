@@ -29,11 +29,10 @@
 		189EB2ED1CCE31A000F6D758 /* StudentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */; };
 		18A0491C1CCE826600600FED /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0491B1CCE826600600FED /* ProfileImageCell.swift */; };
 		18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0491D1CCE827B00600FED /* ProfileCell.swift */; };
-		18C07BD51CC6290B007989C5 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C07BD41CC6290B007989C5 /* Rating.swift */; };
 		18C07BD71CC637BF007989C5 /* TListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD61CC637BF007989C5 /* TListCell.xib */; };
 		18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */; };
-		18C468611CC6592600890A97 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468601CC6592600890A97 /* Background.swift */; };
 		18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C468631CC65BCB00890A97 /* RatingCell.xib */; };
+		18E45C121CE257CA00489C1D /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E45C111CE257CA00489C1D /* StudentData.swift */; };
 		18E668B61CE1F69D00A520B1 /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E668B51CE1F69D00A520B1 /* TeacherData.swift */; };
 		18E807FE1CE0766100C9DDB7 /* EduCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E807FD1CE0766100C9DDB7 /* EduCell.swift */; };
 		18E808001CE0769300C9DDB7 /* EduCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E807FF1CE0769300C9DDB7 /* EduCell.xib */; };
@@ -84,11 +83,10 @@
 		189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetail.swift; sourceTree = "<group>"; };
 		18A0491B1CCE826600600FED /* ProfileImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
 		18A0491D1CCE827B00600FED /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		18C07BD41CC6290B007989C5 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		18C07BD61CC637BF007989C5 /* TListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TListCell.xib; sourceTree = "<group>"; };
 		18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		18C468601CC6592600890A97 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		18C468631CC65BCB00890A97 /* RatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		18E45C111CE257CA00489C1D /* StudentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		18E668B51CE1F69D00A520B1 /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
 		18E807FD1CE0766100C9DDB7 /* EduCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduCell.swift; sourceTree = "<group>"; };
 		18E807FF1CE0769300C9DDB7 /* EduCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EduCell.xib; sourceTree = "<group>"; };
@@ -154,6 +152,7 @@
 				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
 				18E668B51CE1F69D00A520B1 /* TeacherData.swift */,
 				189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */,
+				18E45C111CE257CA00489C1D /* StudentData.swift */,
 				1837C58E1CDB21B2009A3C09 /* URLs.swift */,
 				1837C5901CDB3A26009A3C09 /* Rating */,
 				18F2DBF01CD49FD600B24762 /* Calender */,
@@ -188,8 +187,6 @@
 				18E808021CE076B000C9DDB7 /* WorkCell.xib */,
 				18F150E21CD3A1340044987A /* RatingCell.swift */,
 				18C468631CC65BCB00890A97 /* RatingCell.xib */,
-				18C07BD41CC6290B007989C5 /* Rating.swift */,
-				18C468601CC6592600890A97 /* Background.swift */,
 			);
 			name = "Teacher Personal Info";
 			sourceTree = "<group>";
@@ -467,11 +464,10 @@
 				18F671261CD30CC200E8E422 /* TInfoViewController.swift in Sources */,
 				1894682C1CC868B9003581E9 /* SignInWebPage.swift in Sources */,
 				18A0491C1CCE826600600FED /* ProfileImageCell.swift in Sources */,
-				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
-				18C468611CC6592600890A97 /* Background.swift in Sources */,
 				18E808031CE076B000C9DDB7 /* WorkCell.swift in Sources */,
 				18E808061CE09B1D00C9DDB7 /* TimeData.swift in Sources */,
 				18F77A221CDDA60400348573 /* TestModel.swift in Sources */,
+				18E45C121CE257CA00489C1D /* StudentData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

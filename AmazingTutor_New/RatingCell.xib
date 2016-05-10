@@ -87,6 +87,14 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="Comment" destination="QgE-QN-cue" id="7GA-ca-elz"/>
+                <outlet property="CommentDate" destination="eoe-Jl-WSD" id="oXv-qe-zVn"/>
+                <outlet property="StarComment" destination="dTU-fM-7J3" id="8qW-f5-WeZ"/>
+                <outlet property="UserImage" destination="dRH-C9-FuU" id="M9W-uO-PKU"/>
+                <outlet property="UserName" destination="pIG-lj-uqt" id="VQF-0J-LWp"/>
+                <outlet property="UserNationality" destination="FPS-cJ-Kt8" id="Dzz-yp-Tbm"/>
+            </connections>
             <point key="canvasLocation" x="407.5" y="399"/>
         </tableViewCell>
     </objects>
