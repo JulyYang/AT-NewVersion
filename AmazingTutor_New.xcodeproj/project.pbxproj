@@ -34,10 +34,12 @@
 		18C07BD91CC639FA007989C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */; };
 		18C468611CC6592600890A97 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C468601CC6592600890A97 /* Background.swift */; };
 		18C468651CC65BCB00890A97 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C468631CC65BCB00890A97 /* RatingCell.xib */; };
+		18E668B61CE1F69D00A520B1 /* TeacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E668B51CE1F69D00A520B1 /* TeacherData.swift */; };
 		18E807FE1CE0766100C9DDB7 /* EduCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E807FD1CE0766100C9DDB7 /* EduCell.swift */; };
 		18E808001CE0769300C9DDB7 /* EduCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E807FF1CE0769300C9DDB7 /* EduCell.xib */; };
 		18E808031CE076B000C9DDB7 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E808011CE076B000C9DDB7 /* WorkCell.swift */; };
 		18E808041CE076B000C9DDB7 /* WorkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E808021CE076B000C9DDB7 /* WorkCell.xib */; };
+		18E808061CE09B1D00C9DDB7 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E808051CE09B1D00C9DDB7 /* TimeData.swift */; };
 		18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */; };
 		18E84E741CC7CD7E00BE8021 /* SignInReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */; };
 		18E8A6DD1CD8D44B00AA78B8 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */; };
@@ -87,10 +89,12 @@
 		18C07BD81CC639FA007989C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18C468601CC6592600890A97 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		18C468631CC65BCB00890A97 /* RatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		18E668B51CE1F69D00A520B1 /* TeacherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherData.swift; sourceTree = "<group>"; };
 		18E807FD1CE0766100C9DDB7 /* EduCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduCell.swift; sourceTree = "<group>"; };
 		18E807FF1CE0769300C9DDB7 /* EduCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EduCell.xib; sourceTree = "<group>"; };
 		18E808011CE076B000C9DDB7 /* WorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		18E808021CE076B000C9DDB7 /* WorkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCell.xib; sourceTree = "<group>"; };
+		18E808051CE09B1D00C9DDB7 /* TimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
 		18E84E711CC7CD7E00BE8021 /* SignInReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReuseCell.swift; sourceTree = "<group>"; };
 		18E84E721CC7CD7E00BE8021 /* SignInReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInReuseCell.xib; sourceTree = "<group>"; };
 		18E8A6DC1CD8D44B00AA78B8 /* ClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				18F77A211CDDA60400348573 /* TestModel.swift */,
 				1832596C1CD075B0008FD1CD /* PropertySetting.swift */,
 				18E9DDF61CC47531000896EC /* TeacherDetail.swift */,
+				18E668B51CE1F69D00A520B1 /* TeacherData.swift */,
 				189EB2EC1CCE31A000F6D758 /* StudentDetail.swift */,
 				1837C58E1CDB21B2009A3C09 /* URLs.swift */,
 				1837C5901CDB3A26009A3C09 /* Rating */,
@@ -264,6 +269,7 @@
 				18F2DBEE1CD49FBC00B24762 /* CalenderWeb.swift */,
 				18ED6E821CD711F100F08A16 /* BookingSuccess.swift */,
 				189468351CC88BB6003581E9 /* BookingSuccess.xib */,
+				18E808051CE09B1D00C9DDB7 /* TimeData.swift */,
 			);
 			name = Calender;
 			sourceTree = "<group>";
@@ -452,6 +458,7 @@
 				1872624F1CC4EF71003340D7 /* LoginViewController.swift in Sources */,
 				18E84E731CC7CD7E00BE8021 /* SignInReuseCell.swift in Sources */,
 				189EB2E51CCE2CE200F6D758 /* ProfileTableViewController.swift in Sources */,
+				18E668B61CE1F69D00A520B1 /* TeacherData.swift in Sources */,
 				18A0491E1CCE827B00600FED /* ProfileCell.swift in Sources */,
 				18E995D11CDB03A4004C2B12 /* SubLoginViewController.swift in Sources */,
 				18E9DDF71CC47531000896EC /* TeacherDetail.swift in Sources */,
@@ -463,6 +470,7 @@
 				18C07BD51CC6290B007989C5 /* Rating.swift in Sources */,
 				18C468611CC6592600890A97 /* Background.swift in Sources */,
 				18E808031CE076B000C9DDB7 /* WorkCell.swift in Sources */,
+				18E808061CE09B1D00C9DDB7 /* TimeData.swift in Sources */,
 				18F77A221CDDA60400348573 /* TestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

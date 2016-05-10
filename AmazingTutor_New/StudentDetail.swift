@@ -31,20 +31,7 @@ class Student{
 //    var UnscheduledCourse:[String] = []
 //    var StarRating: String?
 //    var Comment: String?
-//
-//    init (SJson:JSON){
-//        self.id = SJson["id"].stringValue
-//        self.name = SJson["name"].stringValue
-//        self.imageURL = SJson["StudentImage"].stringValue
-//        self.city = SJson["city"].stringValue
-//        
-////        let BookedArray = SJson["bookedCourse"
-////        self.BookedCourse =
-//        
-//        self.StarRating = SJson["stars"].stringValue
-//        self.Comment = SJson["StudentComment"].stringValue
-//    
-//    }
+
 
 
 }

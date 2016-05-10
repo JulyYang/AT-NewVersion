@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import STZPopupView
+import APESuperHUD
 
 protocol alertSheetDelegate: class {
     func fadeOut()
@@ -16,21 +18,21 @@ protocol alertSheetDelegate: class {
 class BookingSuccess: UIView {
     weak var alertDelegate : alertSheetDelegate?
 
-    
     @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var AmazingTitle: UILabel!
     @IBOutlet weak var TutorTitle: UILabel!
     @IBOutlet weak var SubTitle: UILabel!
+    
     @IBAction func BookingCheck(sender: AnyObject) {
-        removeFromSuperview()
-        alertDelegate?.backToMainPage()
-//        let DesStoryboard = UIStoryboard(name: "TList", bundle: nil)
+        alertDelegate?.fadeOut()
+        
+        //        let DesStoryboard = UIStoryboard(name: "TList", bundle: nil)
 //        let DesController = DesStoryboard.instantiateViewControllerWithIdentifier("ClassViewController")
 //        self.window!.rootViewController = DesController
     }
     
-    class func instanceFromNib() -> UIView {
-        return UINib(nibName: "BookingSuccess", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
+    class func instanceFromNib() -> BookingSuccess {
+        return UINib(nibName: "BookingSuccess", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! BookingSuccess
     }
 }
 

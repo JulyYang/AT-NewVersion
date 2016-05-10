@@ -18,8 +18,8 @@ class Teacher {
     var CommentNumber: Int?
     var StarScores: String?
     var Languages : [String]?
-    var Rate: Int?
-    var Trail: Bool?
+    var Rate: String?
+    var Trail: String?
     var TeacherSelfIntro: String?
     var TeacherBackground: String?
     var TeacherCalender: String?
@@ -27,3 +27,6 @@ class Teacher {
     var AvailableTime: [String]?
     
 }
+
+
+

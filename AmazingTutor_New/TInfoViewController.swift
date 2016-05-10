@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APESuperHUD
 
 class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -30,6 +31,11 @@ class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         TInfoTable.dataSource = self
         TInfoTable.delegate = self
+        
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "", presentingView: self.view)
+        fakeAPICall(){
+            APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,4 +136,14 @@ class TInfoViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.navigationItem.title = "BANANA YELLOW"
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica", size: 17)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
+    
+    private func fakeAPICall(closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(1 * (NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+
 }

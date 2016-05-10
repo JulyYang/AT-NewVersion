@@ -22,9 +22,7 @@ class HangoutAlert: UIView, UIGestureRecognizerDelegate, UIWebViewDelegate{
     @IBOutlet weak var SubTitle: UILabel!
     @IBOutlet weak var HangoutBtWebView: UIWebView!
     @IBOutlet weak var GoToHangout: UILabel!
-//    @IBAction func goToHangoutBt(sender: GoToHangout) {
-//        
-//    }
+
     // 將xib上的item load進來view裡
     class func instanceFromNib() -> UIView {
         return UINib(nibName: "HangoutAlert", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView

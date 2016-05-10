@@ -8,6 +8,7 @@
 
 import UIKit
 import STZPopupView
+import APESuperHUD
 
 class ClassViewController: UIViewController, UITableViewDelegate,UITableViewDataSource , goToHangoutAlertDelegate, UIGestureRecognizerDelegate {
         
@@ -49,7 +50,6 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ClassTable.registerNib(UINib(nibName: "ClassCell", bundle: nil), forCellReuseIdentifier: "ClassContent")
         ClassTable.rowHeight = UITableViewAutomaticDimension
         ClassTable.estimatedRowHeight = 100.0
@@ -63,6 +63,17 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
         ScheduledNumber.backgroundColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
         SubTitle.textColor = UIColor(red: 46/255, green: 206/255, blue: 172/255, alpha: 1.0)
         SubTitle.text = "SCHEDULED"
+        
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "", presentingView: self.view)
+        fakeAPICall(){
+            APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
+//            let storyboard = UIStoryboard(name: "TList", bundle: nil)
+//            let viewController = storyboard.instantiateViewControllerWithIdentifier("ClassViewController")
+//            self.presentViewController(viewController, animated: true, completion: nil)
+//            NSUserDefaults.standardUserDefaults().setValue(self., forKey: <#T##String#>)
+//            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -141,4 +152,14 @@ class ClassViewController: UIViewController, UITableViewDelegate,UITableViewData
         PastLabel.backgroundColor = UIColor.whiteColor()
         PastNumber.backgroundColor = UIColor.whiteColor()
     }
+    
+    private func fakeAPICall(closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(1 * (NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+
 }
